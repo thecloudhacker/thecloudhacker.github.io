@@ -1,0 +1,79 @@
+/* theCloudHacker */
+/* Primary StyleSheet */
+
+@font-face {
+	font-family: 'King';
+	src: local('King'), local('King'), url('../font/king.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Victorian';
+	src: local('Victorian'), local('Victorian'), url('../font/victorian.ttf') format('truetype');
+}
+
+body{
+    background: #2e2e2e;
+    color: #ffffff;
+    font-family: King, courier, arial;
+}
+
+h1{
+    font-size: 4em;
+    font-family: Victorian, courier, arial;
+    color: #f78400;
+}
+h2{
+    font-size: 2.6em;
+    font-family: Victorian, courier, arial;
+    color: #f78400;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+a.visited{
+    color: #ffffff;
+}
+a:hover{
+    color: #2e2e2e;
+    background: #ffffff;
+}
+.nav{
+    display:inline-block;
+    font-family: Victorian, courier, arial;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.nav li{
+    text-decoration: none;
+    float: left;
+    display: block;
+    margin: 0 15px 0 15px;
+}
+.nav li:hover{
+    background-color: #ffffff;
+    color: #2e2e2e;
+}
+.pic{
+    float: left;
+    margin: 0 25px 0 0;
+}
+.pic img{
+    border: 2px solid #ffffff;
+    border-radius: 250px;
+}
+footer{
+    position: absolute;
+    display: block;
+    text-align:center;
+    border-top: 2px solid #000000;
+    width: 100%;
+    bottom: 0;
+    z-index: 20;
+    height: 30px;
+    font-family: Victorian, courier, arial;
+    font-size: 1.4em;
+    background: #2e2e2e;
+}
