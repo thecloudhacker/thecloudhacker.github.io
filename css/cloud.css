@@ -60,6 +60,12 @@ a:hover{
     border: 1px solid #f78400;
     padding: 3px 3px 3px 3px;
 }
+.nav p{
+    font-family: King, courier, arial;
+    color: #666666;
+    font-size: 0.8em;
+}
+
 .pic{
     display: block;
     float:left;
