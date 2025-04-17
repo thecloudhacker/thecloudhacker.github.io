@@ -92,14 +92,17 @@ a:hover{
     padding: 14px 0px 0px 0px;
     font-family: Victorian, courier, arial;
     font-size: 1.4em;
-    background: #2e2e2e;
-    background-image: url(../img/paperbgndblack.jpg);
 }
 .content{
     display: block;
     height: auto;
     margin: 0px 50px 50px 50px;
     
+}
+.titleSection{
+    padding-top: 20px;
+    margin-left: 210px;
+    text-align: center;
 }
 .columnDiv{
     column-count: 3;
