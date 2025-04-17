@@ -68,6 +68,7 @@ a:hover{
 
 .pic{
     display: block;
+    text-align: center;
 }
 .pic img{
     border: 2px solid #ffffff;
