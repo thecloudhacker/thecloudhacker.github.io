@@ -111,6 +111,11 @@ a:hover{
     padding-top: 20px;
     margin-left: 210px;
 }
+.normalDiv{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 210px;
+}
 
 .contentCol1{
     float: left;
@@ -154,4 +159,9 @@ a:hover{
     max-height: 100%;
     object-fit: contain;
     border: 2px solid #c0c0c0;
+}
+
+.dateField{
+    font-size: 0.8em;
+    color: #999999;
 }

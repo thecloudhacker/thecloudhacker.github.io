@@ -68,6 +68,10 @@ a.visited{
 }
 .content{
 }
+.normalDiv{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
 .contentCol1{
     text-align: justify;
@@ -98,4 +102,8 @@ a.visited{
     max-height: 100%;
     object-fit: contain;
     border: 2px solid #c0c0c0;
+}
+.dateField{
+    font-size: 0.8em;
+    color: #999999;
 }
