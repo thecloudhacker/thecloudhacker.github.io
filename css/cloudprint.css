@@ -11,6 +11,16 @@
 	src: local('Victorian'), local('Victorian'), url('../font/victorian.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Nabla';
+	src: local('Nabla'), local('Nabla'), url('../font/Nabla.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SmoochSans';
+	src: local('SmoochSans'), local('Nabla'), url('../font/SmoochSans.ttf') format('truetype');
+}
+
 body{
     background: #ffffff;
     color: #000000;
@@ -20,13 +30,18 @@ body{
 
 h1{
     font-size: 4em;
-    font-family: Victorian, courier, arial;
+    font-family: Nabla, courier, arial;
     color: #000000;
     text-align: center;
 }
 h2{
-    font-size: 2.0em;
-    font-family: King, courier, arial;
+    font-size: 2.2em;
+    font-family: Nabla, courier, arial;
+    color: #333333;
+}
+h3{
+    font-size: 2.2em;
+    font-family: SmoochSans, courier, arial;
     color: #333333;
 }
 a{

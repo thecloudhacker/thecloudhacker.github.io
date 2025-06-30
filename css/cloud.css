@@ -11,25 +11,40 @@
 	src: local('Victorian'), local('Victorian'), url('../font/victorian.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Nabla';
+	src: local('Nabla'), local('Nabla'), url('../font/Nabla.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SmoochSans';
+	src: local('SmoochSans'), local('Nabla'), url('../font/SmoochSans.ttf') format('truetype');
+}
+
 body{
     background: #2e2e2e;
     color: #ffffff;
     background-image: url(../img/blackWallpaper.jpg);
     background-position: 0%;
     background-attachment: fixed;
-    font-family: King, courier, arial;
+    font-family: SmoochSans, courier, arial;
     font-weight: 400;
 }
 
 h1{
     font-size: 4em;
-    font-family: Victorian, courier, arial;
+    font-family: Nabla, courier, arial;
     color: #f78400;
     text-align: center;
 }
 h2{
-    font-size: 2.6em;
-    font-family: King, courier, arial;
+    font-size: 2.2em;
+    font-family: Nabla, courier, arial;
+    color: #f78400;
+}
+h3{
+    font-size: 2.2em;
+    font-family: SmoochSans, courier, arial;
     color: #f78400;
 }
 a{
@@ -45,7 +60,7 @@ a:hover{
 }
 .nav{
     display:block;
-    font-family: Victorian, courier, arial;
+    font-family: SmoochSans, courier, arial;
     font-size: 1.8em;
     float: left;
     width: 210px;
@@ -91,7 +106,7 @@ a:hover{
     height: 60px;
     width: 100%;
     padding: 14px 0px 0px 0px;
-    font-family: Victorian, courier, arial;
+    font-family: SmoochSans, courier, arial;
     font-size: 1.4em;
 }
 .content{
