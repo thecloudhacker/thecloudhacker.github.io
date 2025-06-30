@@ -59,11 +59,11 @@ a:hover{
     background: #ffffff;
 }
 .nav{
-    display:block;
+    display: block;
     font-family: SmoochSans, courier, arial;
     font-size: 1.8em;
     width: 210px;
-    height: 200px;
+    height: 500px;
     bottom: 0;
     left: 0;
     position: fixed;
