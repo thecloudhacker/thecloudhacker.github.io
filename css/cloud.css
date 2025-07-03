@@ -45,9 +45,9 @@
         color: #f78400;
     }
     h3{
-        font-size: 1.6em;
+        font-size: 1.8em;
         font-family: SmoochSans, courier, arial;
-        color: #f78400;
+        color: #ffffff;
     }
     a{
         color: #ffffff;
@@ -131,6 +131,7 @@
         padding-bottom: 20px;
         padding-top: 20px;
         margin-left: 210px;
+        text-align: justify;
     }
     .normalDiv{
         padding-bottom: 20px;
