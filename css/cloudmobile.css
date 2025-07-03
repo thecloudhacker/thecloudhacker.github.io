@@ -146,5 +146,7 @@
         object-fit: contain;
         border: 2px solid #c0c0c0;
     }
-
+    .breakDiv{
+        border-bottom: 1px #999999 dashed;
+    }
 }
