@@ -189,5 +189,6 @@
     }
     .breakdiv{
         border-bottom: 1px #999999 dashed;
+        margin-left: 210px;
     }
 }
