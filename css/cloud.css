@@ -56,10 +56,11 @@
     }
     a.visited{
         color: #f78400;
+        text-decoration:wavy;
     }
     a:hover{
-        color: #f78400;
-        background: #ffffff;
+        background-color: #f78400;
+        color: #ffffff;
     }
     .nav{
         display: block;
