@@ -44,10 +44,42 @@
             <span class="mottoLine">fortis non ferox</span>
         </div>
     <br/><br/>
+
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>Critical Sudo Vulnerability</h3>
+        <p>
+            Two critical flaws in Linux's sudo command-line utility have been discovered, long undiscovered since their introduction into the software in 2013.
+        </p>
+        <p>
+            CVE-2025-32462 and the more worrying CVE-2025-32463 are credited with discovery to Stratascale researcher Rich Mirch and said CVE-2025-32462 has managed to slip 
+            through the cracks for over 12 years.
+        </p>
+        <p>
+            Tooted in the sudo -h option making it possible to list a user's sudo privileges on a different host, it was possible to execute any command allowed by the 
+            remote host to be run on the local machine as well when running the sudo command with the host option referencing an unrelated remote host.
+        </p>
+        <p>
+            CVE-2025-32463 leverages sudo -r to run arbitrary commands as root, even if the user is not listed in the sudoers file.
+        </p>
+        <p>
+            Following their responsible disclosure on April, the vulnerabilities have been addressed in sudo version 1.9.17p1 which was released on June 30th. 
+        </p>
+        <p>
+            Any vulnerable version prior to 1.9.17p1 can potentially escalate privileges to root for any local unprivileged user. Users are advised to patch with the latest software.
+        </p>
+        <p class="dateField">
+            4th July 2025 || <a href="https://www.thecloudhacker.co.uk/articles/20250704-sudoVulnerability.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
     <div class="columnDiv">
         <!-- News Article -->
         <h3>Qantas airlines suffers Data Breach</h3>
-        <p class="dateField">3rd July 2025</p>
         <p>
             The Australian airline, Qantas has notified the Australian Federal Police of a serious data breach in one of it's contact centres. 
             Used for customer services, the system holds data on six million people including the name, address, contact number, birth date and frequent flyer numbers.
