@@ -197,7 +197,11 @@
         display: block;
         text-decoration: none;
     }
-    .plainList:hover{
+    .plainList li{
+        display: block;
+        text-decoration: none;
+    }
+    .plainList li:hover{
         background-color: #f78400;
         color: #ffffff;
     }
