@@ -31,6 +31,7 @@
         background-attachment: fixed;
         font-family: SmoochSans, courier, arial;
         font-weight: 400;
+        font-size: 1.2em;
     }
 
     h1{
@@ -190,5 +191,14 @@
     .breakdiv{
         border-bottom: 1px #999999 dashed;
         margin-left: 210px;
+    }
+
+    .plainList{
+        display: block;
+        text-decoration: none;
+    }
+    .plainList:hover{
+        background-color: #f78400;
+        color: #ffffff;
     }
 }
