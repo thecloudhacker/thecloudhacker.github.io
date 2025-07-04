@@ -55,19 +55,25 @@
     }
     a.visited{
         color: #f78400;
+        text-decoration:wavy;
     }
     a:hover{
-        color: #f78400;
-        background: #ffffff;
+        background-color: #f78400;
+        color: #ffffff;
     }
     .nav{
         display: block;
         font-family: SmoochSans, courier, arial;
         font-size: 1.8em;
+        width: 100%;
+        text-align: center;
     }
     .nav li{
         display: block;
         padding: 5px 5px 5px 5px;
+        background: #000000;
+        border: 1px solid #f78400;
+        color: #ffffff;
     }
     .nav a:hover{
         background-color: #ffffff;
@@ -83,7 +89,7 @@
 
     .pic{
         display: block;
-        float:left;
+        text-align: center;
     }
     .pic img{
         border: 2px solid #ffffff;
@@ -108,7 +114,6 @@
         font-family: Victorian, courier, arial;
         font-size: 1.4em;
         background: #2e2e2e;
-        background-image: url(../img/paperbgndblack.jpg);
     }
     .content{
         display: block;
@@ -148,5 +153,18 @@
     }
     .breakDiv{
         border-bottom: 1px #999999 dashed;
+    }
+
+    .plainList{
+        display: block;
+        text-decoration: none;
+    }
+    .plainList li{
+        display: block;
+        text-decoration: none;
+    }
+    .plainList li:hover{
+        background-color: #f78400;
+        color: #ffffff;
     }
 }
