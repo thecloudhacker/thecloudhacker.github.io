@@ -47,6 +47,40 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Citrix Bleeds Again</h3>
+        <p>
+            Citrix Netscaler has been in the feeds again this week with two vulnerabilities being actively exploited in the world wild web.
+        </p>
+        <p>
+            CVE-2025-5777 and CVE-2025-6543 are proving that Arnie was right in Predator - &quot;If it bleeds, we can kill it&quot;. Well, perhaps not kill 
+            the Netscaler, but make it hemorrhage data from memory.
+        </p>
+        <p>
+            CVE-2025-5777 is particularly fun according to <a href="https://labs.watchtowr.com/how-much-more-must-we-bleed-citrix-netscaler-memory-disclosure-citrixbleed-2-cve-2025-5777/" target="watchtowr">Watchtowr's lab analysis</a>, 
+            showing that simple request replays with crafted input parameters can spit memory contents back at you. 
+        </p>
+        <p>
+            It appears that the Citrix team potentially have uninitialised local variables in the authentication processing which is handing back random pieces of data from memory. Whilst it's important 
+            to note that you cannot request specific memory locations, the repeated requests to a live, active system could yeild important information from other users 
+            on VPN connections. 
+        </p>
+        <p>
+            Defensive coding practices are designed to mitigate against this sort of issue, ensuring variables are nulled and memory pointers aren't left opening doors to data.
+        </p>
+        <p>
+            As always, check your patch status and stem the bleeding.
+        </p>
+        <p class="dateField">
+            9th July 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/20250709-Citrix-Bleeds-Again.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>Critical Sudo Vulnerability</h3>
         <p>
             Two critical flaws in Linux's sudo command-line utility have been discovered, long undiscovered since their introduction into the software in 2013.

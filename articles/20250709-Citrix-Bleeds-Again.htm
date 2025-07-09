@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" value="The Cloud Hacker - News and Info" />
+    <meta name="description" value="The Cloud Hacker - News and Info - Citrix Bleeds Again" />
     <meta name="author" content="TheCloudHacker">
     <title>The Cloud Hacker</title>
     <link href="../css/cloud.css" rel="stylesheet" media="screen" />
@@ -21,7 +21,7 @@
     -->
     <script>
         console.log("The Cloud Hacker\n In the terminal for decades.");
-        console.log("You are in the Articles Stream probably trying to look for specific articles and news.");
+        console.log("You are in the Articles Stream reading something.");
         console.log("Hack The Planet!");
     </script>
 </head>
@@ -44,26 +44,35 @@
             <span class="mottoLine">fortis non ferox</span>
         </div>
     <br/><br/>    
-    <div class="normalDiv">
-        <h2>News and Articles</h2>
+    <div class="columnDiv">
+        <h2>Citrix Bleeds Again</h2>
+        <p class="dateField">9th July 2025</p>
         <p>
-            Articles are provided in full to back-link as well as displaying on the main landing page for a while.
+            Citrix Netscaler has been in the feeds again this week with two vulnerabilities being actively exploited in the world wild web.
         </p>
         <p>
-            <strong>Latest News and Articles:</strong><br/>
-            <ul class="plainList">
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250709-Citrix-Bleeds-Again.htm">09-07-2025 || NEWS || Citrix Bleeds Again</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250704-sudoVulnerability.htm">04-07-2025 || NEWS || Critical Sudo Vulnerability</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250703-QantasBreach.htm">03-07-2025 || NEWS || Qantas airlines suffers Data Breach</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250630-No-Digital-Ceasefire.htm">30-06-2025 || NEWS || No Digital Ceasefire in World Conflicts</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250626-Glasgow-City-Council.htm">26-06-2025 || NEWS || Glasgow City Council Suffers Cyber Attack</a></li>
-            </ul>
+            CVE-2025-5777 and CVE-2025-6543 are proving that Arnie was right in Predator - &quot;If it bleeds, we can kill it&quot;. Well, perhaps not kill 
+            the Netscaler, but make it hemorrhage data from memory.
         </p>
         <p>
-            &nbsp;
+            CVE-2025-5777 is particularly fun according to <a href="https://labs.watchtowr.com/how-much-more-must-we-bleed-citrix-netscaler-memory-disclosure-citrixbleed-2-cve-2025-5777/" target="watchtowr">Watchtowr's lab analysis</a>, 
+            showing that simple request replays with crafted input parameters can spit memory contents back at you. 
         </p>
         <p>
-            &nbsp;
+            It appears that the Citrix team potentially have uninitialised local variables in the authentication processing which is handing back random pieces of data from memory. Whilst it's important 
+            to note that you cannot request specific memory locations, the repeated requests to a live, active system could yeild important information from other users 
+            on VPN connections. 
+        </p>
+        <p>
+            Defensive coding practices are designed to mitigate against this sort of issue, ensuring variables are nulled and memory pointers aren't left opening doors to data.
+        </p>
+        <p>
+            As always, check your patch status and stem the bleeding.
+        </p>
+        <hr />
+        <br/>
+        <p>
+            For a full list of news and articles head to the <a href="https://www.thecloudhacker.co.uk/sitemap.htm#article/">SiteMap Page</a>
         </p>
         <br/><br/>
 
