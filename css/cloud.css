@@ -52,7 +52,7 @@
     }
     a{
         color: #ffffff;
-        text-decoration: none;
+        text-decoration: double;
     }
     a.visited{
         color: #f78400;
@@ -75,6 +75,9 @@
     .nav li{
         display: block;
         padding: 5px 5px 5px 5px;
+    }
+    .nav a{
+        text-decoration: none;
     }
     .nav a:hover{
         background-color: #ffffff;
