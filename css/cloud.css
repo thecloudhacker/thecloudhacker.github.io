@@ -59,7 +59,7 @@
         text-decoration:wavy;
     }
     a:hover{
-        background-color: #8e8a86;
+        background-color: #f78400;
         color: #ffffff;
     }
     .nav{
@@ -208,5 +208,17 @@
     .plainList li:hover{
         background-color: #f78400;
         color: #ffffff;
+    }
+    .plainList a{
+        color: #ffffff;
+        text-decoration: wavy;
+    }
+    .plainList a:hover{
+        background-color: #f78400;
+        color: #ffffff;
+    }
+    .plainList a.visited{
+        color: #ffffff;
+        text-decoration: wavy;
     }
 }
