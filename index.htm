@@ -48,6 +48,45 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Sonicwall SMA 100 Series Vulnerability</h3>
+        <p class="dateField">16th July 2025</p>
+        <p>
+            The Sonicwall Secure Mobile Access (SMA) 100 series (now end-of-line) provided secure remote access solutions for small and medium-sized businesses. Designed as 
+            an easy-to-deploy system for those businesses that need access and security without having to have heavy technical staffing, it's likely to be dwelling in small and medium 
+            business network racks in back offices across the planet.
+        </p>
+        <p>
+            Despite the fully-patched nature of the end-of-life SMA 100, a threat activity cluster (UNC6148( has been observed by 
+            <a href="https://cloud.google.com/blog/topics/threat-intelligence/sonicwall-secure-mobile-access-exploitation-overstep-backdoor" target="GoogleSecurity" >Google's Threat Intelligence Group </a> 
+            targeting the devices in order to drop a backdoor called &quot;OVERSTEP&quot;. The attack seems to date back at least to October 2024, potentially due to related to CVE's from late 2023 and 2024,  
+            and analysis suggests that UNC6148 may have exfiltrated credentials from the SMA appliance as early as January 2025.
+        </p>
+        <p>
+            The backdoor appears to generate a SSL VPN session spawning a reverse shell. The overall intent appears to be to facilitate data theft and extortion operations with the potential for 
+            ransomware deployment on the network inside the SMA.
+        </p>
+        <p>
+            The nature of the compromise to the equipment requires the verification of the disk image deployed with particular attention to file system artifacts along with log and network analysis and 
+            lateral movement over SSH from the SMA to other systems in your environment.
+        </p>
+        <p>
+            Organisations are advised to isolate compromised equipment, preservation of disk images and telemetry for forensics and then deployment of new images with reset credentials, OTP bindings for all local and 
+            directory users on the appliance and the revoking and reissue of any certificates with private keys stored on the original appliance.
+        </p>
+        <p>
+            Full analysis and details are found on Google's article.
+        </p>
+        <p class="dateField">
+            16th July 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/20250716-SonicwallVulnerability.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>U.K. NCA Arrests four for retailer attacks</h3>
         <p>
             On the 10th July, the U.K. National Crime Agency arrested four individuals in the U.K. in their investigation into the attacks on the U.K. retailers M&amp;S, Co-Op and Harrods.
