@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" value="The Cloud Hacker - News and Info" />
+    <meta name="description" value="The Cloud Hacker - News and Info - NVIDIA Docker Escape" />
     <meta name="author" content="TheCloudHacker">
     <title>The Cloud Hacker</title>
     <link href="../css/cloud.css" rel="stylesheet" media="screen" />
@@ -21,7 +21,7 @@
     -->
     <script>
         console.log("The Cloud Hacker\n In the terminal for decades.");
-        console.log("You are in the Articles Stream probably trying to look for specific articles and news.");
+        console.log("You are in the Articles Stream reading something.");
         console.log("Hack The Planet!");
     </script>
 </head>
@@ -44,31 +44,35 @@
             <span class="mottoLine">fortis non ferox</span>
         </div>
     <br/><br/>    
-    <div class="normalDiv">
-        <h2>News and Articles</h2>
+    <div class="columnDiv">
+        <h2>NVIDIA Docker Escape</h2>
+        <p class="dateField">18th July 2025</p>
         <p>
-            Articles are provided in full to back-link as well as displaying on the main landing page for a while.
+            In a week of events we close-out with the horrifying disclosure that 37% of cloud environments are vulnerable to a flaw 
+            in NVIDIA's Container Toolkit that provides attackers with root access to the host machine. 
         </p>
         <p>
-            <strong>Latest News and Articles:</strong><br/>
-            <ul class="plainList">
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250718-NvidiaDockerEscape.htm">18-07-2025 || NEWS || NVIDIA Docker Escape</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250717-EuropolOperationEastwood.htm">17-07-2025 || NEWS || Europol Operation Eastwood</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250716-SonicwallVulnerability.htm">16-07-2025 || NEWS || Sonicwall SMA 100 Series Vulnerability</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250715-UK-NCA-Arrests.htm">15-07-2025 || NEWS || U.K. NCA Arrests four for retailer attacks</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250710-BrowserExtensions.htm">10-07-2025 || NEWS || Browser Extension Data Leak</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250709-Citrix-Bleeds-Again.htm">09-07-2025 || NEWS || Citrix Bleeds Again</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250704-sudoVulnerability.htm">04-07-2025 || NEWS || Critical Sudo Vulnerability</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250703-QantasBreach.htm">03-07-2025 || NEWS || Qantas airlines suffers Data Breach</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250630-No-Digital-Ceasefire.htm">30-06-2025 || NEWS || No Digital Ceasefire in World Conflicts</a></li>
-                <li><a href="https://www.thecloudhacker.co.uk/articles/20250626-Glasgow-City-Council.htm">26-06-2025 || NEWS || Glasgow City Council Suffers Cyber Attack</a></li>
-            </ul>
+            With three simple lines of code <a href="https://www.wiz.io/blog/nvidia-ai-vulnerability-cve-2025-23266-nvidiascape">detailed in the Wiz disclosure article</a> 
+            it's possible to escape container workloads and rampage through the parent host, potentially further meddling in environments being used by other companies 
+            and customers on the cloud infrastructure.
         </p>
         <p>
-            &nbsp;
+            The CVE, CVE-2025-23266, has been assigned a CVSS score of 9.0 (critical) and bypasses isolation measures by exploiting a subtle misconfiguration in how the toolkit 
+            handles OCI hooks. Anyone with NVIDIA Continer Toolkit up to and including v1.17.7 (CDI mode only for versions prior to 1.17.5) and/or NVIDIA GPU Operator up to and including 25.3.1 is 
+            vulnerable to the attack.
         </p>
         <p>
-            &nbsp;
+            Containers have been hailed as isolated environments that keep workloads safe, but as this continues to highlight, they are not a strong security barrier and should not be 
+            relied on as the only method of workload isolation. If you are not considering a possibility of exit from your container, you could be exposing your other customers or 
+            data stores to threat actors.
+        </p>
+        <p>
+            With many hosted AI systems utilising NVIDIA systems, the possibility that the system you're renting or sharing infrastructure on is compromised could be higher than you expect.
+        </p>
+        <hr />
+        <br/>
+        <p>
+            For a full list of news and articles head to the <a href="https://www.thecloudhacker.co.uk/sitemap.htm#article/">SiteMap Page</a>
         </p>
         <br/><br/>
 
