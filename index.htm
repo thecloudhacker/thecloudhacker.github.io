@@ -48,6 +48,41 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>PAM Backdoor in Linux</h3>
+        <p>
+            A previously undocumented Linux backdoor dubbed &quot;Plague&quot; has been discovered, which apparently has evaded detection for a year.
+        </p>
+        <p>
+            Nextron Systems researcher, Pierre-Henri Pezier, <a href="https://www.nextron-systems.com/2025/08/01/plague-a-newly-discovered-pam-based-backdoor-for-linux/" target="NextronWin">noted</a> 
+            &quot;The implant is built as a malicious PAM, enabling attackers to silently bypass system 
+            authentication and gain persistent SSH access&quot;. Plague integrates deeply into the authentication stack, surviving system updates with minimal forensice traces.
+        </p>
+        <p>
+            Multiple Plague artifacts were found to be uploaded to VirusTotal since July 29th 2024, however none of them were detected as being malicious by the antimalware routines.
+        </p>
+        <p>
+            Plague has several features:
+            <ul>
+                <li>Antidebug, hindering analysis and reverse engineering.</li>
+                <li>String obfuscation, protecting sensitive strings and offsets which complicates detection.</li>
+                <li>Static password, allowing covert access for attackers.</li>
+                <li>Hidden session artifacts, erasing traces of attacker activity.</li>
+            </ul>
+        </p>
+        <p>
+            The Plague backdoor represents a worryingly sophisticated threat to Linux infrastructure, exploiting core auth processes to maintain stealth and persistence on the target system. 
+        </p>
+        <p class="dateField">
+            3rd August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250803-PlaguePAM.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>Silent Crow Aeroflot Hack</h3>
         <p>
             The Russian national airline, Aeroflot, has had to cancel more than 40 flights due to a cyberattack on the company's IT systems.

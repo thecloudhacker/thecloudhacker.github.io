@@ -137,6 +137,7 @@
         padding-top: 20px;
         margin-left: 210px;
         text-align: justify;
+        font-family: King, courier, arial;
     }
     .normalDiv{
         padding-bottom: 20px;
@@ -191,6 +192,7 @@
     .dateField{
         font-size: 0.8em;
         color: #999999;
+        font-family: SmoochSans, courier, arial;
     }
     .breakdiv{
         border-bottom: 1px #999999 dashed;
