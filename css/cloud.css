@@ -200,6 +200,7 @@
         font-size: 0.8em;
         color: #999999;
         font-family: SmoochSans, courier, arial;
+        text-align: right;
     }
     .breakdiv{
         border-bottom: 1px #999999 dashed;
