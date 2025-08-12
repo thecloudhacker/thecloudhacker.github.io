@@ -48,6 +48,41 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Satellite Hacking</h3>
+        <p>
+           Researchers from VisionSpace Technologies displayed a range of vulnerabilities in satellite operations software at BlackHat. The team, having undertaken responsible 
+           disclosure beforehand, demoed several major flaws in software used at ground stations and onbobard craft, displaying the posibility of 
+           takeover or denial of service.
+        </p>
+        <p>
+            Space is increasingly becoming a crowded and sensitive operational zone, with the cost of delivering equipment to orbit reducing each year. Communication with 
+            orbital craft occurs over RF, with newer equipment undertaking key exchange for encrypted communication. It is possible it seems, however, to crash orbital platforms 
+            with an unencrypted message, and then force a rotation of keys. 
+        </p>
+        <p>
+            &quot;So basically, you send a packet to the spacecraft, and the entire software crashes and reboots, which then actually causes the spacecraft, if it's not properly 
+            configured, to reset all its keys. And then you have zero keys on the spacecraft that you can use from that stage on.&quot;, Milenko Starcik announced.
+        </p>
+        <p>
+            The issues discovered were not solely related to craft, but also the software used for tasking such as <a href="https://visionspace.com/yamcs-v5-8-6-vulnerability-assessment/" target="visionWin1">Yamcs</a> and 
+            <a href="https://visionspace.com/openc3-cosmos-a-security-assessment-of-an-open-source-mission-framework/" target="visionWin2">OpenC3Cosmos</a> which allowed 
+            a range of cross-site-scripting and take control over satellite equipment.
+        </p>
+        <p>
+            The team's discovery has provided a range of security improvement to the operation of craft able to be updated, however it is likely that out of the thousands of orbital 
+            craft in the sky, many of them will be vulnerable to a range of attack vectors. Space may or may not be the final frontier of cybersecurity, it seems.
+        </p>
+        <p class="dateField">
+            12th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250812-SatelliteHacking.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>KLM and Air France Targeted</h3>
         <p>
            KLM and Air France have become the latest in a series of air travel companies to be targeted by cybercriminal groups attempting to access and exfiltrate critical data.
@@ -504,41 +539,7 @@
             10th July 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250710-BrowserExtensions.htm">Link || View</a>
         </p>
     </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
 
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Citrix Bleeds Again</h3>
-        <p>
-            Citrix Netscaler has been in the feeds again this week with two vulnerabilities being actively exploited in the world wild web.
-        </p>
-        <p>
-            CVE-2025-5777 and CVE-2025-6543 are proving that Arnie was right in Predator - &quot;If it bleeds, we can kill it&quot;. Well, perhaps not kill 
-            the Netscaler, but make it hemorrhage data from memory.
-        </p>
-        <p>
-            CVE-2025-5777 is particularly fun according to <a href="https://labs.watchtowr.com/how-much-more-must-we-bleed-citrix-netscaler-memory-disclosure-citrixbleed-2-cve-2025-5777/" target="watchtowr">Watchtowr's lab analysis</a>, 
-            showing that simple request replays with crafted input parameters can spit memory contents back at you. 
-        </p>
-        <p>
-            It appears that the Citrix team potentially have uninitialised local variables in the authentication processing which is handing back random pieces of data from memory. Whilst it's important 
-            to note that you cannot request specific memory locations, the repeated requests to a live, active system could yeild important information from other users 
-            on VPN connections. 
-        </p>
-        <p>
-            Defensive coding practices are designed to mitigate against this sort of issue, ensuring variables are nulled and memory pointers aren't left opening doors to data.
-        </p>
-        <p>
-            As always, check your patch status and stem the bleeding.
-        </p>
-        <p class="dateField">
-            9th July 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250709-Citrix-Bleeds-Again.htm">Link || View</a>
-        </p>
-    </div>
     
     
     <p class="breakdiv">
