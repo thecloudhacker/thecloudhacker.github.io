@@ -48,6 +48,39 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Cisco FMC Vulnerability</h3>
+        <p>
+           Another day, another Cisco vulnerability, and this one has a critical 10.0 CVSS rating. If this were a gymnastics competition, they'd be up there on the podium this year.
+        </p>
+        <p>
+            The CVE-2025-20265 is caused by an improper handling of user input by Firewall Management Center's RADIUS authentication subsystem during the login process. Thankfully, 
+            the exploit is only possible if RADIUS authentication is configured for the web-based management interface, SSH mangement or both. 
+        </p>
+        <p>
+            Found during internal security testing by Cisco software engineer Brandon Sakai, the issue is not known to be exploited in the real world (yet!).
+        </p>
+        <p>
+            Cisco FMC is a central management platform for products such as their firewalls, IDS, URL filtering and anti-malware tools. Attacking this central hub to other devices on 
+            the corporate network is a prime target and likely to be actively prodded by foreign government groups.
+        </p>
+        <p>
+            Cisco warned in their security bulletin &quot;An attacker could exploit this vulnerability by sending crafted input when entering credentials that will be authenticated at 
+            the configured RADIUS server, a successful exploit could allow the attacker to execute commands at a high privilege level.&quot; 
+        </p>
+        <p>
+            More information on the issue is available on <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-radius-rce-TNBKf79" target="CiscoWin">Cisco's Security Advisory page</a>.
+        </p>
+        <p class="dateField">
+            17th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250817-CiscoFMCVulnerability.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>HTTP/2 Vulnerability to Crash</h3>
         <p>
            The HTTP/2 protocol, introduced in 2012 to provide a range of improvements on the original has become the most widely used web protocol, despite the 
@@ -428,44 +461,6 @@
         </p>
         <p class="dateField">
             17th July 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250717-EuropolOperationEastwood.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Sonicwall SMA 100 Series Vulnerability</h3>
-        <p>
-            The Sonicwall Secure Mobile Access (SMA) 100 series (now end-of-line) provided secure remote access solutions for small and medium-sized businesses. Designed as 
-            an easy-to-deploy system for those businesses that need access and security without having to have heavy technical staffing, it's likely to be dwelling in small and medium 
-            business network racks in back offices across the planet.
-        </p>
-        <p>
-            Despite the fully-patched nature of the end-of-life SMA 100, a threat activity cluster (UNC6148) has been observed by 
-            <a href="https://cloud.google.com/blog/topics/threat-intelligence/sonicwall-secure-mobile-access-exploitation-overstep-backdoor" target="GoogleSecurity" >Google's Threat Intelligence Group </a> 
-            targeting the devices in order to drop a backdoor called &quot;OVERSTEP&quot;. The attack seems to date back at least to October 2024, potentially due to related to CVE's from late 2023 and 2024,  
-            and analysis suggests that UNC6148 may have exfiltrated credentials from the SMA appliance as early as January 2025.
-        </p>
-        <p>
-            The backdoor appears to generate a SSL VPN session spawning a reverse shell. The overall intent appears to be to facilitate data theft and extortion operations with the potential for 
-            ransomware deployment on the network inside the SMA.
-        </p>
-        <p>
-            The nature of the compromise to the equipment requires the verification of the disk image deployed with particular attention to file system artifacts along with log and network analysis and 
-            lateral movement over SSH from the SMA to other systems in your environment.
-        </p>
-        <p>
-            Organisations are advised to isolate compromised equipment, preservation of disk images and telemetry for forensics and then deployment of new images with reset credentials, OTP bindings for all local and 
-            directory users on the appliance and the revoking and reissue of any certificates with private keys stored on the original appliance.
-        </p>
-        <p>
-            Full analysis and details are found on <a href="https://cloud.google.com/blog/topics/threat-intelligence/sonicwall-secure-mobile-access-exploitation-overstep-backdoor" target="GoogleSecurity">Google's article.</a>
-        </p>
-        <p class="dateField">
-            16th July 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250716-SonicwallVulnerability.htm">Link || View</a>
         </p>
     </div>
     
