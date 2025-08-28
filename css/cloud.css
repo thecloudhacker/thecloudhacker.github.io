@@ -57,7 +57,7 @@
     }
     a{
         color: #f78400;
-        text-decoration: wavy;
+        text-decoration: none;
     }
     a.visited{
         color: #f78400;
@@ -70,32 +70,45 @@
     .nav{
         display: block;
         font-family: SmoochSans, courier, arial;
-        font-size: 1.8em;
+        font-size: 1.7em;
         width: 210px;
         height: 500px;
         bottom: 0;
         left: 0;
         position: fixed;
     }
+    .nav ul{
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-decoration: none;
+        text-indent: 0%;
+    }
     .nav li{
         display: block;
-        padding: 5px 5px 5px 5px;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        text-indent: 0%;
     }
     .nav a{
+        display: block;
         text-decoration: none;
+        padding: 2px 0px 0px 2px;
     }
     .nav a:hover{
+        display: block;
         background-color: #ffffff;
         color: #2e2e2e;
         border: 1px solid #f78400;
-        padding: 3px 3px 3px 3px;
+        padding: 0px 0px 0px 0px;
+        margin: 0px;
     }
     .nav p{
         font-family: King, courier, arial;
         color: #666666;
         font-size: 0.5em;
     }
-
     .pic{
         display: block;
         text-align: center;
@@ -230,5 +243,19 @@
     .plainList a.visited{
         color: #ffffff;
         text-decoration: wavy;
+    }
+    .selectedPage{
+        display: block;
+        background-color: #f78400;
+        color: #ffffff;
+        border: none;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+    .selectedPage:hover{
+        display: block;
+        background-color: #ffffff;
+        color: #2e2e2e;
+        border: none;
     }
 }

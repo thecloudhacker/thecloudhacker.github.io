@@ -64,7 +64,7 @@
     .nav{
         display: block;
         font-family: SmoochSans, courier, arial;
-        font-size: 1.8em;
+        font-size: 1.9em;
         width: 100%;
         text-align: center;
     }
@@ -76,18 +76,31 @@
         color: #ffffff;
     }
     .nav a{
+        display: block;
         text-decoration: none;
+        padding: 1px 0px 1px 0px;
     }
     .nav a:hover{
         background-color: #ffffff;
         color: #2e2e2e;
         border: 1px solid #f78400;
-        padding: 3px 3px 3px 3px;
+        padding: 0px 0px 0px 0px;
+        margin: 0;
     }
     .nav p{
         font-family: King, courier, arial;
         color: #666666;
         font-size: 0.5em;
+    }
+    .nav ul{
+        display: block;
+        text-decoration: none;
+        text-indent: 0%;
+    }
+    .nav li{
+        display: block;
+        padding: 0px 0px 0px 0px;
+        text-indent: 0%;
     }
 
     .pic{
@@ -169,5 +182,25 @@
     .plainList li:hover{
         background-color: #f78400;
         color: #ffffff;
+    }
+    .selectedPage{
+        background-color: #f78400;
+        color: #ffffff;
+        border: 1px solid #f78400;
+        padding: 3px 3px 3px 3px;
+    }
+    .selectedPage{
+        display: block;
+        background-color: #f78400;
+        color: #ffffff;
+        border: none;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+    .selectedPage:hover{
+        display: block;
+        background-color: #ffffff;
+        color: #2e2e2e;
+        border: none;
     }
 }
