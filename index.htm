@@ -47,6 +47,43 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Microsoft Cloud Takeover Ransomware</h3>
+        <p>
+           Ransomware has been a continual thorn in the side of business for several years now and much of the reported incidents (not everyone does still it seems) 
+           related to systems on corporate network fleets. In a continually &quot;cloud-first&quot; narrative for business, it appears that cybercriminal groups are also chanting 
+           the &quot;cloud-first&quot; mantra and evolving their attack patterns.
+        </p>
+        <p>
+            Microsoft's threat intelligence team have caught one of the financially-motivated groups they monitor, Storm-0501, breaking into an enterprise's on-premesis and cloud 
+            environments, exfiltrating and destroying resident data before demanding a ransom to get the data back. The attack does not rely on normal malware deployment and saw 
+            the enterprise contacted over their own Teams platform to demand the payment.
+        </p>
+        <p>
+            The attacks seem to pivot from on-premesis systems to the cloud environment through lateral movement and privilege escalation, with the use of Evil-WinRM for remote code 
+            execution. DCSync attacked Active Directory and stolen credentials were then used to target cloud-connected systems and ultimately register an Entra ID tenant owned by the 
+            criminal group as a trusted federated domain, creating a backdoor to the systems. 
+        </p>
+        <p>
+            The multi-stage processes show a determined and resourceful group with understanding in on-premesis and cloud environments with a new angle on the ransomware process.
+        </p>
+        <p>
+            Microsoft have made a change to Entra ID that aims to prevent attackers from abusing the Directory Synchronisation Accounts in attacks to escalate privileges. They also advise 
+            using the Trusted Platform Module on Entra Connect Sync Server to store sensitive credentials and cryptographic keys, preventing those from being stolen by attackers. 
+        </p>
+        <p>
+            The principles of least-privilege and zero trust should be considered with these hybrid environments, and as always - MFA.
+        </p>
+        <p class="dateField">
+            28th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250828-MScloudTakeover.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>Kill Switch Dev gets 4 years</h3>
         <p>
            The end of employment can be a traumatic experience and humans can respond in many ways. The response 
@@ -464,42 +501,6 @@
             19th July 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250719-UkraineHackersRussianDrones.htm">Link || View</a>
         </p>
     </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>NVIDIA Docker Escape</h3>
-        <p>
-            In a week of events we close-out with the horrifying disclosure that 37% of cloud environments are vulnerable to a flaw 
-            in NVIDIA's Container Toolkit that provides attackers with root access to the host machine. 
-        </p>
-        <p>
-            With three simple lines of code <a href="https://www.wiz.io/blog/nvidia-ai-vulnerability-cve-2025-23266-nvidiascape" target="WizWin">detailed in the Wiz disclosure article</a> 
-            it's possible to escape container workloads and rampage through the parent host, potentially further meddling in environments being used by other companies 
-            and customers on the cloud infrastructure.
-        </p>
-        <p>
-            The CVE, CVE-2025-23266, has been assigned a CVSS score of 9.0 (critical) and bypasses isolation measures by exploiting a subtle misconfiguration in how the toolkit 
-            handles OCI hooks. Anyone with NVIDIA Continer Toolkit up to and including v1.17.7 (CDI mode only for versions prior to 1.17.5) and/or NVIDIA GPU Operator up to and including 25.3.1 is 
-            vulnerable to the attack.
-        </p>
-        <p>
-            Containers have been hailed as isolated environments that keep workloads safe, but as this continues to highlight, they are not a strong security barrier and should not be 
-            relied on as the only method of workload isolation. If you are not considering a possibility of exit from your container, you could be exposing your other customers or 
-            data stores to threat actors.
-        </p>
-        <p>
-            With many hosted AI systems utilising NVIDIA Toolkits, the possibility that the system you're renting or sharing infrastructure on is compromised could be higher than you expect.
-        </p>
-        <p class="dateField">
-            18th July 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250718-NvidiaDockerEscape.htm">Link || View</a>
-        </p>
-    </div>
-    
-
     
     
     <p class="breakdiv">
