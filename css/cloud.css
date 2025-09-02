@@ -258,4 +258,9 @@
         color: #2e2e2e;
         border: none;
     }
+    .credThumb{
+        width: 80px;
+        height: 80px;
+        border: 0px;
+    }
 }
