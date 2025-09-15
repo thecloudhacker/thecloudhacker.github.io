@@ -114,11 +114,16 @@
     .pic img:hover{
         border: 2px dashed #f78400;
         transform: rotate(360deg);
-        transition: all 0.3s ease-in-out 0s;
+        transition: all 0.8s ease-in-out 0s;
     }
     .roundpic{
         border: 2px solid #ffffff;
         border-radius: 250px;
+    }
+    .roundpic:hover{
+        border: 8px dashed #f78400;
+        transform: rotate(30deg);
+        transition: all 0.2s ease-in-out 0s;
     }
     .footer{
         position: fixed;
@@ -129,7 +134,7 @@
         height: 60px;
         width: 100%;
         padding: 14px 0px 0px 0px;
-        font-family: Victorian, courier, arial;
+        font-family: SmoochSans, courier, arial;
         font-size: 1.4em;
         background: #2e2e2e;
     }
