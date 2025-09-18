@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" value="The Cloud Hacker - News and Info - NPM SBoM Check" />
+    <meta name="author" content="TheCloudHacker">
+    <title>The Cloud Hacker</title>
+    <link href="../../css/cloud.css" rel="stylesheet" media="screen" />
+    <link href="../../css/cloudprint.css" rel="stylesheet" media="print" />
+    <link href="../../css/cloudmobile.css" rel="stylesheet" media="mobile" />
+    <link href="../../css/cloudmobile.css" rel="stylesheet" media="screen" />
+    <!--
+     _   _                 _                 _   _                _             
+    | | | |               | |               | | | |              | |            
+    | |_| |__   ___    ___| | ___  _   _  __| | | |__   __ _  ___| | _____ _ __ 
+    | __| '_ \ / _ \  / __| |/ _ \| | | |/ _` | | '_ \ / _` |/ __| |/ / _ \ '__|
+    | |_| | | |  __/ | (__| | (_) | |_| | (_| | | | | | (_| | (__|   <  __/ |   
+     \__|_| |_|\___|  \___|_|\___/ \__,_|\__,_| |_| |_|\__,_|\___|_|\_\___|_|   
+    The Cloud Hacker
+    -->
+    <script>
+        console.log("The Cloud Hacker\n In the terminal for decades.");
+        console.log("You are in the Articles Stream reading something.");
+        console.log("Hack The Planet!");
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div  class="nav">
+            <br/><br/>
+            <ul>
+                <li><a href="https://www.thecloudhacker.co.uk">Home</a></li>
+                <li><a href="https://www.thecloudhacker.co.uk/about.htm">About</a></li>
+                <li><a href="https://www.thecloudhacker.co.uk/articles/">News</a></li>
+                <li><a href="https://www.github.com/thecloudhacker" target="gitwin">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/thecloudhacker/" target="linkwin">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@thecloudhacker" target="youwin">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="titleSection">
+            <span class="pic"><img src="../../img/me_tophat.jpg" alt="TheCloudHacker" title="TheCloudHacker" width="120px" height="120px" /></span>
+            <h1>The Cloud Hacker</h1>
+            <span class="mottoLine">fortis non ferox</span>
+        </div>
+    <br/><br/>
+    <div class="columnDiv">
+        <h2>NPM SBoM check</h2>
+        <p class="dateField">17th September 2025</p>
+        <p>
+            The ever growing <a href="https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages" target="SocketWin">list of compromised NPM packages</a> (thank you, Socket, for tracking this!) 
+            is causing a pain to keep up with alongside work, and despite having a nice SBoM output from my dev teams, trying to manually keep up with checking was somewhat of a manual headache... especially after a huge deluge 
+            of compromised items into the list.
+        </p>
+        <p>
+            Cue several hours of scraping data from the 'net and some janky dev work on my side... 
+        </p>
+        <p>
+            I've pulled together a very quick and dirty system with worker functions and a web interface to help keep track of my system status. With the ability to throw a CSV of new entries at it every few hours as I need to it's certainly easier 
+            than manually entering data to search through the SBoM output from our systems. It's been a while since I've had to do this type of frantic dev in anger while holding down the other daily tasks to support teams, 
+            but it's working (!) and providing some feedback on the company codebase, so .. yay.. win for the old man with rusty skills.
+        </p>
+        <p>
+            I might end up forking a version of my code, tidying it a bit and providing on Github if this worm continues to help others in the same situation (be gentle, I'm tired and juggling way too much!).
+        </p>
+        <p>
+            I admit this whole situation feels remeniscent of dealing with the early 2000's worms at the beginning of my career in I.T. As with any worm the damn thing will keep popping up on unsuspecting developer machines and making it's way around. 
+            I suspect that this will linger around for quite some time, causing a headache for development, security and operational teams. There is much to learn from the incident and the nasty attack patterns it's using (the pushing to your own Github 
+            repos and marking private/internal repos as public is a high-level concern for me right now), with another &quot;we have to stop using long-term auth tokens&quot; comment hanging above the whole episode for package systems around the world.
+        </p>
+        <p>
+            Is anyone else frantically writing janky tooling for this at the moment ? I would imagine I'm not the only one hammering the keyboard and trying to work out ways of dealing with this type of attack.
+        </p>
+        <hr />
+        <br/>
+        <p>
+            For a full list of news and articles head to the <a href="https://www.thecloudhacker.co.uk/sitemap.htm#article/">SiteMap Page</a>
+        </p>
+        <br/><br/>
+
+
+    </div>
+
+    <div class="clearfix"><br/><br/></div>
+    <div class="clearfix"><br/><br/></div>
+    <div class="clearfix"><br/><br/></div>
+    <div class="clearfix"><br/><br/></div>
+    
+    </div>
+    <div class="footer">
+        <img src="../../img/me_tophat.jpg" alt="TheCloudHacker" title="TheCloudHacker" width="30px" height="30px" class="roundpic" /> &copy; The Cloud Hacker 2025 || <a href="https://www.thecloudhacker.co.uk/sitemap.htm">Site Map</a>
+    </div>
+</html>
