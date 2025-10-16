@@ -48,6 +48,44 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>F5 Compromised</h3>
+        <p>
+            US security company, F5, has <a href="https://my.f5.com/manage/s/article/K000154696" target="F5win">issued a statement</a> stating it has had their systems 
+            compromised and data exfiltrated. 
+        </p>
+        <p>
+            The information taken from their systems includes a portion of the BIG-IP software codebase and vulnerability information which could lead to 
+            discovery of exploits in the hardware and software provided by F5. Affected Hardware F5 products include: BIG-IP iSeries, rSeries, or any other F5 device that has reached end of support, 
+            with software affected including all devices running BIG-IP (F5OS), BIG-IP (TMOS), Virtual Edition (VE), BIG IP Next, BIG- IQ, and BIG-IP Next for Kubernetes (BNK) / Cloud-Native Network Functions (CNF)
+        </p>
+        <p>
+            F5 states: <br/>
+            &quot;...we learned a highly sophisticated nation-state threat actor maintained long-term, persistent access to, and downloaded files from, certain F5 systems. These systems included our BIG-IP product development environment and engineering knowledge management platforms...&quot;
+        </p>
+        <p>
+            &quot;We have no evidence of access to, or exfiltration of, data from our CRM, financial, support case management, or iHealth systems. However, some of the exfiltrated files from our knowledge management platform contained configuration or implementation information for a small 
+            percentage of customers. We are currently reviewing these files and will be communicating with affected customers directly as appropriate.&quot;
+        </p>
+        <p>
+            In a change to recent global patterns of compromise, this doesn't appear to be a supply-chain attack and from their assessment appears to be a very targeted attack aimed at gaining knowledge on 
+            the BIG-IP software from F5. 
+        </p>
+        <p>
+            Management interfaces customers may have exposed to the Internet should be switced-off and the latest updates applied to systems. It is likely that F5 systems will be targeted increasingly and any 
+            attack surface open to the world will be prodded to discover possible weaknesses, therefore F5 have advised utilisation of SIEM tooling to monitor activity to and from your devices.
+        </p>
+        <p class="dateField">
+            16th October 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251016-f5compromise.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+    
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>The Scattered Lapsus$ Hunters Hokey Cokey</h3>
         <p>
             You put your hack crew in, you take your hack crew out, in out, in out, rattle sabres all about...
@@ -967,60 +1005,6 @@
         </p>
         <p class="dateField">
             12th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250812-SatelliteHacking.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>KLM and Air France Targeted</h3>
-        <p>
-           KLM and Air France have become the latest in a series of air travel companies to be targeted by cybercriminal groups attempting to access and exfiltrate critical data.
-        </p>
-        <p>
-            The airlines who are part of the same group detected unusual activity on an external platform utilised by KLM and Air France customer service. This appears to 
-            have led to unauthorised access to customer data. The security teams acted quickly to stop the unauthorised access, however the firms have not publicly specified the types of 
-            data stolen, other than citing &quot;No sensitive data, such as passwords, travel details, Flying Blue miles, passport or credit card information was stolen&quot;.
-        </p>
-        <p>
-            It would appear that firstname, surname and contact details have been disclosed in the breach from shared images of documents sent to customers. 
-        </p>
-        <p>
-            The airlines have advised customers to be on the alert for phishing attempts using the limited details acquired from the customer system.
-        </p>
-        <p>
-            It's not known as yet who the perpetrator of the incident was, however it has all the hallmarks of the ShinyHunters group. 
-        </p>
-        <p class="dateField">
-            8th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250808-klmairfrance.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Google Salesforce Breach</h3>
-        <p>
-           Google has confirmed this week cybercriminals broke into one of it's Salesforce databases in June and pulled data belonging to some of it's SMB customers.
-        </p>
-        <p>
-            The Threat intelligence team <a href="https://cloud.google.com/blog/topics/threat-intelligence/voice-phishing-data-extortion?rev=7194ef805fa2d04b0f7e8c9521f97343" targe="GTIGwin">has admitted</a> 
-            a gang associated with ShinyHunters broke into one of the corporate Salesforce instances and accessed contact information and related notes. 
-        </p>
-        <p>
-            Google advised &quot;The data retrieved by the threat actor was confined to basic and largely publicly-available business information, such as business names and contact details&quot;
-        </p>
-        <p>
-            The incident continues to highlight that even the most forward-security-thinking companies can suffer breaches to compontents in it's estate.
-        </p>
-        <p class="dateField">
-            7th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250807-GoogleSalesforce.htm">Link || View</a>
         </p>
     </div>
     
