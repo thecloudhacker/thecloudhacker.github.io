@@ -1035,75 +1035,7 @@
     <p class="breakdiv">
         &nbsp;
     </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>HTTP/2 Vulnerability to Crash</h3>
-        <p>
-           The HTTP/2 protocol, introduced in 2012 to provide a range of improvements on the original has become the most widely used web protocol, despite the 
-           newer HTTP/3 variant being released in 2019. The introduction of HTTP/2 brought a huge range of improvements on the original, however it also (as with all new software) 
-           brought a range of new bugs into the world. 
-        </p>
-        <p>
-            In 2023, the 'Rapid Reset' flaw brought the protocol into the limelight with the ability to DoS servers. Having undergone a patch to correct this flaw, it now appears 
-            as if the patch wasn't as complete as one might hope. Security researchers Gal Bar Nahum, Anat Bremler-Barr, and Yaniv Harel have released details of a &quot;common design flaw&quot; 
-            in implementations of HTTP/2 allowing the possibility of &quot;massive DoS attacks&quot;
-        </p>
-        <p>
-            CVE-2025-8671 which extends the previous CVE-2023-44487 "Rapid Reset" vulnerability allows an attacker to bypass concurrency limits which would normally prevent a server 
-            from accepting requests for too much work. Rapid Reset allowed the bypass of limits by quickly cancelling a request, however in MadeYouReset they can trick the server into 
-            cancelling the request on the client's behalf which bypasses the protection put in place in 2023.
-        </p>
-        <p>
-            The vulnerability discovery partially supported by Thales' Imperva has further detail and a range of mitigation strategies 
-            <a href="https://www.imperva.com/blog/madeyoureset-turning-http-2-server-against-itself/" target="ThalesSite">on their blog</a>. 
-        </p>
-        <p>
-            Even &quot;well-crafted&quot; requests and traffic can be used in weaponised form, it would continue to appear.
-        </p>
-        <p class="dateField">
-            15th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250815-http2ResetVulnerability.htm">Link || View</a>
-        </p>
-    </div>
     
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Satellite Hacking</h3>
-        <p>
-           Researchers from VisionSpace Technologies displayed a range of vulnerabilities in satellite operations software at BlackHat. The team, having undertaken responsible 
-           disclosure beforehand, demoed several major flaws in software used at ground stations and onbobard craft, displaying the posibility of 
-           takeover or denial of service.
-        </p>
-        <p>
-            Space is increasingly becoming a crowded and sensitive operational zone, with the cost of delivering equipment to orbit reducing each year. Communication with 
-            orbital craft occurs over RF, with newer equipment undertaking key exchange for encrypted communication. It is possible it seems, however, to crash orbital platforms 
-            with an unencrypted message, and then force a rotation of keys. 
-        </p>
-        <p>
-            &quot;So basically, you send a packet to the spacecraft, and the entire software crashes and reboots, which then actually causes the spacecraft, if it's not properly 
-            configured, to reset all its keys. And then you have zero keys on the spacecraft that you can use from that stage on.&quot;, Milenko Starcik announced.
-        </p>
-        <p>
-            The issues discovered were not solely related to craft, but also the software used for tasking such as <a href="https://visionspace.com/yamcs-v5-8-6-vulnerability-assessment/" target="visionWin1">Yamcs</a> and 
-            <a href="https://visionspace.com/openc3-cosmos-a-security-assessment-of-an-open-source-mission-framework/" target="visionWin2">OpenC3Cosmos</a> which allowed 
-            a range of cross-site-scripting and take control over satellite equipment.
-        </p>
-        <p>
-            The team's discovery has provided a range of security improvement to the operation of craft able to be updated, however it is likely that out of the thousands of orbital 
-            craft in the sky, many of them will be vulnerable to a range of attack vectors. Space may or may not be the final frontier of cybersecurity, it seems.
-        </p>
-        <p class="dateField">
-            12th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250812-SatelliteHacking.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
     
     
     
