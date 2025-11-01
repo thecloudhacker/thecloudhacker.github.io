@@ -48,6 +48,36 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Docker Vulnerabilties</h3>
+        <p>
+            Another day, another set of patching to undertake on your development systems.
+        </p>
+        <p>
+            A new vulnerability in Docker Compose (CVE-2025-62725) has been given an 8.9 severity rating. Uncovered by Imperva's Ron Masas, the path-traversal 
+            vulnerability allows attackers to escape Compose's cache directory and write arbitrary files onto the host system. The vulnerability comes through a 
+            recently added support for OCI-based Compose artifacts. Users are recommended to upgrade to v2.40.2 of Docker Compose.
+        </p>
+        <p>
+            Docker has also fixed a flaw in the Windows installer that left it vulnerabile to DLL injection. ENISA tracked the issue as EUVD-2025-36191 with an 8.8 rating. 
+        </p>
+        <p>
+            The flaw in the installer allowed SLL hijacking due to insecure DLL search orders - at a time when DLL hijacking and injection has been a favourite of cybercriminal groups.
+        </p>
+        <p>
+            Patched in Desktop 4.49.0, users are encouraged to upgrade if they haven't already. The release notes also warn the next release onwards requires at least Windows 10 22H2 or Windows 11 23H2 
+            which could impact users on certain patch cycles.
+        </p>
+        <p class="dateField">
+            1st November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251191-dockerCompose.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>European Telco Compromised</h3>
         <p>
             The research team at Darktrace have uncovered activity in a European telecommunications organisation (currently no name shared) that matches 
