@@ -211,6 +211,11 @@
         object-fit: contain;
         border: 2px solid #c0c0c0;
     }
+    
+    .inlineScroll{
+        display: block;
+        animation: marquee 10s linear infinite;
+    }
 
     .dateField{
         font-size: 0.8em;
