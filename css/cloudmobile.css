@@ -4,8 +4,8 @@
 @media only screen and  (max-width:1171px)  {
 
     @font-face {
-        font-family: 'King';
-        src: local('King'), local('King'), url('../font/king.ttf') format('truetype');
+        font-family: 'Karla';
+        src: local('Karla'), local('Karla'), url('../font/Karla-VariableFont_wght.ttf') format('truetype');
     }
 
     @font-face {
@@ -29,7 +29,7 @@
         background-image: url(../img/blackWallpaper.jpg);
         background-position: 0%;
         background-attachment: fixed;
-        font-family: King, courier, arial;
+        font-family: Karla, courier, arial;
         font-weight: 400;
     }
 
@@ -88,7 +88,7 @@
         margin: 0;
     }
     .nav p{
-        font-family: King, courier, arial;
+        font-family: Karla, courier, arial;
         color: #666666;
         font-size: 0.5em;
     }
@@ -161,7 +161,7 @@
         font-size: 1.4em;
         text-align: center;
         display: block;
-        font-family: King, courier, arial;
+        font-family: Karla, courier, arial;
     }
     .orangelink{
         color: #f78400;
