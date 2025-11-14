@@ -48,6 +48,36 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Claude AI used for cyber espionage</h3>
+        <p>
+           In a <a href="https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf">security report from Anthropic</a>  the first catalogued usage of AI tools 
+           to attempt access to over thirty high-profile companies and government organisations. In some cases, the attacks was successful.
+        </p>
+        <p>
+            Traced-back to a Chinese state-sponsored group, the attackers used Claude Code and Model Context Protocol (MCP) to run the attacks without a human in the tactical execution loop. 
+            A human-developed framework utilised Claude to orchestrate multi-stage attacks, which were then in-turn carried out by several Claude sub-agents, all performing specific tasks. 
+            Once the sub-agents had developed exploit chains and their associated custom payloads, human operators spent between two and ten minutes reviewing the results of the AI's actions, then signing-off on the subsequent exploitations.
+            The sub-agents ran to find and validate credentials, escalate privileges, moving laterally across the network, accessing and then stealing sensitive data. Post-exploitation, the human operator only had to again review the AI's 
+            work before approving the final data exfiltration.
+        </p>
+        <p>
+            &quot;While we predicted these capabilities would continue to evolve, what has stood out to us is how quickly they have done so at scale&quot; states Anthropic's new analysis. As with standard AI, it &quot;requently overstated findings and occasionally 
+            fabricated data during autonomous operations&quot;. So, it's not just normal development teams suffering from the cocky and erroneous &quot;I'm amazing!&quot; responses from AI.
+        </p>
+        <p>
+            It may be the first documented case, but with the rise of automated systems it is unlikely to be the solitary example in the news.
+        </p>
+        <p class="dateField">
+            14th November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251114-claudeAIespionage.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>Cisco Firewall Ongoing Attacks</h3>
         <p>
            Continuing on from the previous Cisco vulnerability in the wild reports, Cisco have uncovered an ongoing attack against Secure ASA Software or Cisco 
@@ -1030,42 +1060,6 @@
         </p>
     </div>
     
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Cisco FMC Vulnerability</h3>
-        <p>
-           Another day, another Cisco vulnerability, and this one has a critical 10.0 CVSS rating. If this were a gymnastics competition, they'd be up there on the podium this year.
-        </p>
-        <p>
-            The CVE-2025-20265 is caused by an improper handling of user input by Firewall Management Center's RADIUS authentication subsystem during the login process. Thankfully, 
-            the exploit is only possible if RADIUS authentication is configured for the web-based management interface, SSH mangement or both. 
-        </p>
-        <p>
-            Found during internal security testing by Cisco software engineer Brandon Sakai, the issue is not known to be exploited in the real world (yet!).
-        </p>
-        <p>
-            Cisco FMC is a central management platform for products such as their firewalls, IDS, URL filtering and anti-malware tools. Attacking this central hub to other devices on 
-            the corporate network is a prime target and likely to be actively prodded by foreign government groups.
-        </p>
-        <p>
-            Cisco warned in their security bulletin &quot;An attacker could exploit this vulnerability by sending crafted input when entering credentials that will be authenticated at 
-            the configured RADIUS server, a successful exploit could allow the attacker to execute commands at a high privilege level.&quot; 
-        </p>
-        <p>
-            More information on the issue is available on <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-radius-rce-TNBKf79" target="CiscoWin">Cisco's Security Advisory page</a>.
-        </p>
-        <p class="dateField">
-            17th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250817-CiscoFMCVulnerability.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
     
     
     

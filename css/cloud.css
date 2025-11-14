@@ -100,9 +100,11 @@
         background-color: #ffffff;
         color: #2e2e2e;
         border: 1px solid #f78400;
-        padding: 0px 0px 0px 0px;
+        padding: 0px 20px 0px 0px;
         margin: 0px;
         text-align: right;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out 0s;
     }
     .nav p{
         font-family: Karla, courier, arial;
