@@ -20,7 +20,11 @@
 
     @font-face {
         font-family: 'SmoochSans';
-        src: local('SmoochSans'), local('Nabla'), url('../font/SmoochSans.ttf') format('truetype');
+        src: local('SmoochSans'), local('SmoochSans'), url('../font/SmoochSans.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Steelworks';
+        src: local('Steelworks'), local('Steelworks'), url('../font/steelworks.ttf') format('truetype');
     }
 
     body{
@@ -196,10 +200,10 @@
         overflow: auto;
     }
     .mottoLine{
-        font-size: 1.4em;
+        font-size: 1.8em;
         text-align: center;
         display: block;
-        font-family: Karla, courier, arial;
+        font-family: Steelworks, courier, arial;
         border-bottom: 1px solid #ffffff;
     }
     .orangelink{
