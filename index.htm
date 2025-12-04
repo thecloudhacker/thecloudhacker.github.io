@@ -48,6 +48,33 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Cloudflare Mitigates Largest Ever (so far) DDoS</h3>
+        <p>
+            Cloudflare have announced they detected and mitigated the largest ever (so far) DDoS measuring 29.7 terabits per second. Originating from a DDoS 
+            botnet-for-hire known as AISURU, the attack lasted for 69 seconds. Cloudflare did not disclose the target of this attack.
+        </p>
+        <p>
+            The AISURU botnet has prominently targeted telecoms providers, hosting providers, gaming companies and financial services. The attack was 
+            UDP bombarding an average of 15,000 destination ports per second, randomising various packet attributes in an attempt to evade detection and defences.
+        </p>
+        <p>
+            The growing DDoS problem has been seen hand-in-hand with the increase in malware, targeting and infecting as many devices as possible to utilise in these attacks. The usual kudos for 
+            having the largest botnet army is high on the agenda - more bots equals more likelyhood of causing issues for targets, equals higher price for hire.
+        </p>
+        <p>
+            Despite mitigating the incident in this battle, the war is yet to be over and we are likely to see an increased quantity of these high figure attacks in 2026.
+        </p>
+        <p class="dateField">
+            4th December 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251204-cloudflareDDoS.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>NPM Woes Continue</h3>
         <p>
             I'd like to say this was just the Annus Horribilis for Node Package Manager, but I fear this is just the shape of things to come for the forseeable future. In today's 
@@ -1034,87 +1061,6 @@
             2nd September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250902-FakenpmPackage.htm">Link || View</a>
         </p>
     </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>South Korean Telecom Fined for terrible security</h3>
-        <p>
-           One for the scrapbook of &quot;what in the hell, my good man?&quot;, SK Telecom have mismanaged their network systems security so utterly terribly 
-           that the watchdog has fined them $97M for their sloppy practices. The breach, disclosed back in April, led to the unauthorised access to data for almost 27 
-           million subscribers. That's over half the population of South Korea (50M). Over HALF the population!
-        </p>
-        <p>
-            According to the regulator's report, SK Telecom failed at every layer of defence and effectively rolled-out the red carpet to their own systems for the 
-            cyber criminals that ran amok through their network. 
-        </p>
-        <p>
-            Administrators had left thousands of server credentials in plaintext on a management server; there was no password protection on subscriber databases; IDS logs were not 
-            reviewed by teams; 26 Million USIM authentication keys were left unencrypted in the database (leading to the ability to clone SIMS without knowledge); 
-            And no response from monitoring teams on the installation of malware and exfiltration of data.
-        </p>
-        <p>
-            The regulator provided a scathing observation &quot;The security operating environment between the internet and the internal network was managed and operated 
-            in a state that was very vulnerable to illegal intrusion&quot;. Read that as corporate speak for &quot;step away from the computer, Ralf Wiggum, it's time to go eat crayons&quot;
-        </p>
-        <p>
-            Not only slapped with a hefty fine, SK Telecom have now been ordered to implement a range of remedial items including proper encryption, tighter access controls and 
-            real-time monitoring of IDS. Just a few things that any Telco should have been implementing by default, you would have imagined.
-        </p>
-        <p>
-            Telecommunication companies are a high value target that we often only see nation-backed or heavyweight groups going after, but this incident proves the bar for 
-            security is not guaranteed to start at certain levels. When you leave your networks wide open with all the goodies on the table, don't be surprised if someone walks 
-            off with the food, pooch, car keys, bank cards and chaise longue. 
-        </p>
-        <p>
-            That's enough Internets for me today.
-        </p>
-        <p class="dateField">
-            28th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250828-SKTelecom.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Microsoft Cloud Takeover Ransomware</h3>
-        <p>
-           Ransomware has been a continual thorn in the side of business for several years now and much of the reported incidents (not everyone does still it seems) 
-           are related to systems on corporate network fleets. In a continually &quot;cloud-first&quot; narrative for business, it appears that cybercriminal groups are also chanting 
-           the &quot;cloud-first&quot; mantra and evolving their attack patterns.
-        </p>
-        <p>
-            Microsoft's threat intelligence team have caught one of the financially-motivated groups they monitor, Storm-0501, breaking into an enterprise's on-premesis and cloud 
-            environments, exfiltrating and destroying resident data before demanding a ransom to get the data back. The attack does not rely on normal malware deployment and saw 
-            the enterprise contacted over their own Teams platform to demand the payment.
-        </p>
-        <p>
-            The attacks seem to pivot from on-premesis systems to the cloud environment through lateral movement and privilege escalation, with the use of Evil-WinRM for remote code 
-            execution. DCSync attacked Active Directory and stolen credentials were then used to target cloud-connected systems and ultimately register an Entra ID tenant owned by the 
-            criminal group as a trusted federated domain, creating a backdoor to the systems. 
-        </p>
-        <p>
-            The multi-stage processes show a determined and resourceful group with understanding in on-premesis and cloud environments with a new angle on the ransomware process.
-        </p>
-        <p>
-            Microsoft have made a change to Entra ID that aims to prevent attackers from abusing the Directory Synchronisation Accounts in attacks to escalate privileges. They also advise 
-            using the Trusted Platform Module on Entra Connect Sync Server to store sensitive credentials and cryptographic keys, preventing those from being stolen by attackers. 
-        </p>
-        <p>
-            The principles of least-privilege and zero trust should be considered with these hybrid environments, and as always - MFA.
-        </p>
-        <p class="dateField">
-            28th August 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250828-MScloudTakeover.htm">Link || View</a>
-        </p>
-    </div>
-    
-    
     
     
     
