@@ -46,6 +46,46 @@
     <br/><br/>
 
 
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>New AWS Crypto Miner attack</h3>
+        <p>
+            It's been a thorn in the side for AWS-based companies for at least ten years now, and it's taken an interesting new turn. The deployment of 
+            crypto mining infrastructure from exposed or stolen keys has been a vast financial sink hole for countless companies, but 
+            <a href="https://aws.amazon.com/blogs/security/cryptomining-campaign-targeting-amazon-ec2-and-amazon-ecs/" target="AWSwin" >Amazon have uncovered </a>
+            a new variant which has a sneaky attack mode targeting EC2 and ECS.
+        </p>
+        <p>
+            Once a key has been swiped by the criminal, resources and permissions are quickly enumerated before deploying the crypto mining resources across EC2 and ECS. 
+            The multi-stage attack begins with a discovery phase, running probes with the stolen IAM credentials to test permissions by using the --DryRun flag. This enables 
+            the attacker to validate IAM permissions without launching infrastructure, avoiding cost increase triggers and minimising forensic evidence. 
+        </p>
+        <p>
+            The process continues with a CreateServiceLinkedRole and CreateRole phase to generate IAM roles for autoscaling groups and AWS Lambda, then attaching the 
+            AWSLambdaBasicExecutionRole policy. The ECS clusters deployed then register a malicious DockerHub image ( yenik65958/secret:user ) , creating a service using the 
+            task definition to initiate crypto mining on ECS Fargate nodes. The DockerHub image has been thankfully taken down ( after over 100,000 pulls ), however the data 
+            shows it configured to initiate a shell script on launch to start cryptocurrency mining using the RandomVIREL mining algorithm. The threat actor has also been observed 
+            to exploit EC2 service quotas to maximise resource consumption with scaling between 20 and 999 instances, targeting both high-performance GPU and machine learning 
+            instances as well as compute, memory and GP instances.
+        </p>
+        <p>
+            The attack also stands out for it's use of the ModifyInstanceAttribute action to enable termination protection, preventing instances from being terminated using the 
+            EC2 console, CLI or API. This action makes response to the incident more involved and shows an understanding of the standard clean-up practices.
+        </p>
+        <p>
+            Amazon reccomends GuardDuty is in place and enabled on all accounts and regions with Runtime monitoring enabled, along with integration to the Security Hub. As always, 
+            strong IAM controls are critically important with temporary keys instead of long-term access keys and enforced MFA on all accounts. Least privilege permissions should be 
+            the default as always and ship those logs to review easily as necessary by your teams!
+        </p>
+        <p class="dateField">
+            17th December 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251217-awsCryptoMiners.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
 
     <div class="columnDiv">
         <!-- News Article -->
@@ -1024,68 +1064,6 @@
         </p>
         <p class="dateField">
             9th September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250909-NPMcompromise.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>MS BASIC Code Released</h3>
-        <p>
-            Microsoft have released the sourcecode for the 6502 BASIC it created way back in 1976 which was utilised by many of the early Microcomputer systems we 
-            loved and grew up using such as the Commodore PET, Vic-20 and C64. 
-        </p>
-        <p>
-            Written in Assembly language, the code includes fixes to garbage colletion the Commodore identified. Time stamps on the Github repository show commit dates from 48 years ago, with 
-            comedic comments on the repository such as &quot;I see the last commit other than the license was 48 years ago. Is this project abandoned?&quot;
-        </p>
-        <p>
-            If you're playing around with 6502-based 8-bit systems, you now have a range of Assembly to tinker around with to your hearts content and fork the project.
-        </p>
-        <p>
-            Discover some retro nostalgia <a href="https://github.com/microsoft/BASIC-M6502" target="GitWindow">over on Github</a>.
-        </p>
-        <p class="dateField">
-            5th September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250905-MSBASIC.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Salesforce Breach</h3>
-        <p>
-            The vast list of companies with customer support data compromised in the recent <a href="https://trust.salesloft.com/?uid=Drift%2FSalesforce+Security+Update" target="SalesForceDrift">Salesforce Drift compromise</a> is growing and 
-            includes big name brands Google, Palo Alto Networks, Cloudflare and Tenable. Cloudflare has provided a <a href="https://blog.cloudflare.com/response-to-salesloft-drift-incident/" target="CloudFlareWin">very comprehensive breakdown</a> of the incident from their 
-            discovery through remediation. In a refreshingly transparent post we can see from Cloudflare's investigation a sustained probing of systems by the criminals for around ten days. 
-        </p>
-        <p>
-            Salesloft commented on the 26th August: 
-            &quot;Initial findings have shown that the actor’s primary objective was to steal credentials, specifically focusing on sensitive information like AWS access keys, passwords, 
-            and Snowflake-related access tokens. We have determined that this incident did not impact customers who do not use our Drift-Salesforce integration. Based on our ongoing investigation, 
-            we do not see evidence of ongoing malicious activity related to this incident.&quot;
-        </p>
-        <p>
-            Given the nature of the information stolen, however, it is more than likely the details will make their way onto the open market or be utilised for phishing or targeted campaigns against 
-            customers of the brands. 
-        </p>
-        <p>
-            Drift, the AI chat agent tooling, has been taken offline for now (one does wonder if it will return and how many people will trust it going forward). It's vital that anyone having 
-            utilised it in their workflows disconnects, rotates API tokens and runs forensic analysis on their data systems.
-        </p>
-        <p>
-            Computers help humanity make terrible decisions incredibly quickly, and AI tooling, it would appear, continues to prove that it makes it more effectively and terribly than a 
-            junior developer with no world experience. 
-        </p>
-        <p class="dateField">
-            3rd September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250903-SalesforceBreach.htm">Link || View</a>
         </p>
     </div>
     
