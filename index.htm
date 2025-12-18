@@ -48,6 +48,39 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Cisco AsyncOS Zero Day</h3>
+        <p>
+            'Twas the week before Christmas and all through the NOC, Cisco Admins were screaming and Criminals running amok.
+        </p>
+        <p>
+            Cisco have <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sma-attack-N9bf4">announced a critical vulnerability</a> in the AsuncOS software under active exploitation by Chinese APT's. The attack campaign 
+            affects Cisco Secure Email Gateway systems (physical AND virtual) and Cisco Secure Web Manager appliances (physical AND virtual) of <strong>ALL release versions</strong> 
+            when these conditions are met:
+            <ul>
+                <li>The appliance is configured with the Spam Quarantine feature</li>
+                <li>The Spam Quarantine feature is exposed to and reachable from the Internet</li>
+            </ul>
+        </p>
+        <p>
+            Cisco have uncovered exploitation dating back to at least late November 2025 with the vulnerability being used to drop tunneling tools like ReverseSSH and Chisel. A lightweight Python backdoor has been also seen 
+            capable of receiving encoded commands and executing them. The CVE ( CVE-2025-20393 ) has a rating score of 10.0 and in the absence of a patch, 
+            administrators are being urged to restore their appliances to a secure configuration; limit access from the Internet; secure devices behind a firewall and only allow traffic from trusted hosts; 
+            separate mail and management functionality onto a separate network interface; monitor web log traffic for unexpected traffic and disable HTTP for the main administration portal.
+        </p>
+        <p>
+            So, Season's greetings, admin teams - I hope you didn't have any plans for this weekend.
+        </p>
+        <p class="dateField">
+            18th December 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251218-ciscoasyncos.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>New AWS Crypto Miner attack</h3>
         <p>
             It's been a thorn in the side for AWS-based companies for at least ten years now, and it's taken an interesting new turn. The deployment of 
