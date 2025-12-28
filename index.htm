@@ -48,6 +48,49 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>MongoDB Bleeds Memory Data</h3>
+        <p>
+            A flaw in Zlib compression protocol header length ( <a href="https://www.cve.org/CVERecord?id=CVE-2025-14847" target="CVEWin">CVE-2025-14847</a> ) which is utilised by default 
+            in MongoDB can return uninitialized heap memory without authenticating to the server. 
+        </p>
+        <p>
+            Tracked by MongoDB and thankfully with a patch available ( <a href="https://jira.mongodb.org/browse/SERVER-115508" target="MongoWin">MongoDB Jira Ticket</a>), the MongoDB team urge 
+            users to patch immediately even though there are no <em>current reports</em> of active exploitation. 
+        </p>
+        <p>
+            This data leak vulnerability affects the following versions:
+            <ul>
+                <li>MongoDB 8.2.0 through 8.2.3</li>
+                <li>MongoDB 8.0.0 through 8.0.16</li>
+                <li>MongoDB 7.0.0 through 7.0.26</li>
+                <li>MongoDB 6.0.0 through 6.0.26</li>
+                <li>MongoDB 5.0.0 through 5.0.31</li>
+                <li>MongoDB 4.4.0 through 4.4.29</li>
+                <li>All MongoDB Server v4.2 versions</li>
+                <li>All MongoDB Server v4.0 versions</li>
+                <li>All MongoDB Server v3.6 versions</li>
+            </ul>
+        </p>
+        <p>
+            The team have also advised &quot;If you cannot upgrade immediately, disable zlib compression on the MongoDB Server by 
+            starting mongod or mongos with a networkMessageCompressors or a net.compression.compressors option that explicitly omits 
+            zlib. Example safe values include snappy,zstd or disabled&quot;
+        </p>
+        <p>
+            Loving these end of year issues during the holiday periods. 
+        </p>
+        <p class="dateField">
+            28th December 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251228-mongoBleed.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>n8n Vulnerability leaves systems open</h3>
         <p>
             The increasingly popular automation system, n8n, has just had a critical advisory with a CVSS score of 9.9 anounced, with the ability for authenticated attackers to 
