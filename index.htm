@@ -48,6 +48,69 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>New n8n CVE</h3>
+        <p>
+            A new year, a new vulnerability in software the world is using merrily. The latest vulnerability in n8n comes hot on the heels of the 
+            <a href="https://www.thecloudhacker.co.uk/news/2025/20251223-n8nVulnerability.htm">previous CVE in December</a> which also allowed attackers 
+            to execute commands.
+        </p>
+        <p>
+            The new vulnerability ( <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-68668" target="n8ncveWin">CVE-2025-68668</a> ) is classified as a Protection 
+            Mechanism Failure, rated at 9.9 on the &quot;oh crud!&quot; meter. Affecting versions 1.0.0 through to 2.0.0, any authenticated user with permission to 
+            create or modify workflows to execute arbitrary operating system commands on the host running n8n
+        </p>
+        <p>
+            n8n have confirmed they implemented a &quot;task runner-based native Python implementation in version 1.111.0 as an optional feaature for improved security isolation&quot;. 
+            The feature can be enabled using the N8N_RUNNERS_ENABLED and N8N_NATIVE_PYTHON_RUNNER environment variables prior to 2.0.0 where it is enabled by default.
+        </p>
+        <p>
+            As workarounds, n8n is recommending that users:
+            <ol>
+                <li>Disable the Code Node by setting the environment variable <strong>NODES_EXCLUDE:</strong> &quot;[\&quot;n8n-nodes-base.code\&quot;]&quot;</li>
+                <li>Disable Python support in the Code node by setting the environment variable <strong>N8N_PYTHON_ENABLED=false</strong></li>
+                <li>Configure n8n to use the task runner-based Python sandbox via the <strong>N8N_RUNNERS_ENABLED</strong> and <strong>N8N_NATIVE_PYTHON_RUNNER</strong> environment variables</li>
+            </ol>
+        </p>
+        <p>
+            As adoption of powerful and easy-to-use tooling becomes more normal, it's likely to find itself a target for higher scrutiny by nefarious parties.
+        </p>
+        <p class="dateField">
+            6th January 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260106-n8nVulnerability.htm">Link || View</a>
+        </p>
+    </div>
+
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>Kimwolf Botne</h3>
+        <p>
+            Brian Krebs has <a href="https://krebsonsecurity.com/2026/01/the-kimwolf-botnet-is-stalking-your-local-network/" target="krebsWin">documented a new botnet</a> discovered by 
+            Benjamin Brundage, the 22-year-old founder of the security firm Synthient, which has been 
+            dubbed <strong>Kimwolf</strong>. It has so far infected an estimated 2 Million devices globally, utilising flaws in residential proxy services.
+        </p>
+        <p>
+            The malware that seems to be targetting unofficial Android-based TV boxes and photo frames turns a user's Internet connection into a proxy node, allowing attackers 
+            to squirrel around on your LAN or use your Internet connection for botnet activities. 
+        </p>
+        <p>
+            Synthinet has <a href="https://synthient.com/check" target="kimwolfCheckWin">generated a page on their website</a> to help users verify if their public IP has been tracked as a member of the Kimwolf botnet.
+        </p>
+        <p>
+            Brundage has also compiled <a href="https://github.com/synthient/public-research/blob/main/2026/01/kimwolf/product_devices.csv" target="synthinetWin">a list of the unofficial Android boxes</a> most highly represented in the botnet.
+        </p>
+        <p>
+            If you find or own a box matching one of the model names and/or numbers in the list, pull it out of your network and consider yeeting it into the fires of the scrap recycling centre.
+        </p>
+        <p class="dateField">
+            5th January 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260105-KimwolfBotnet.htm">Link || View</a>
+        </p>
+    </div>
+    
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>MongoDB Bleeds Memory Data</h3>
         <p>
             A flaw in Zlib compression protocol header length ( <a href="https://www.cve.org/CVERecord?id=CVE-2025-14847" target="CVEWin">CVE-2025-14847</a> ) which is utilised by default 
@@ -861,220 +924,6 @@
         </p>
     </div>
     
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>European Airport Check-in System Hacked</h3>
-        <p>
-            Airlines have been pushed into chaos this weekend with flights delayed due to centralised software, Muse, which is operated by RTX (who owns software provider Collins Aerospace) 
-            enduring a &quot;cyber-related disruption&quot;.
-        </p>
-        <p>
-            &quot;The impact is limited to electronic customer check-in and baggage drop and can be mitigated with manual check-in operations.&quot; RTX commented. Customers trying to 
-            meet connections have found the delays have hindered or cancelled their ongoing journeys.
-        </p>
-        <p>
-            Heathrow, Dublin and several other airports have had to delay flights and switch to manual check-in processes to try to keep the lines of customers moving. In several airports customers 
-            have been left stranded as flights are delayed, rescheduled or cancelled and journeys put on hold.
-        </p>
-        <p>
-            Other than noting the software affected, Collins Aerospace have yet to comment publicly about the nature or origin of the hack, leaving speculation as to the cause ranging from 
-            ransomware to the loss of access to systems.
-        </p>
-        <p>
-            Given the recent incursion into foreign airspace by Russia this week, there is a heightened nervousness around the origin of this incident.
-        </p>
-        <p class="dateField">
-            21st September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250921-AirportCheckInHack.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Chrome High Severity Patch</h3>
-        <p>
-            Chrome has had a high severity patch pushed by Google which is under active exploitation. If you haven't already, now is the time to run updates in your 
-            browser.
-        </p>
-        <p>
-            The flaw in the V8 JavaScript and WebAssembly engine, tracked as CVE-2025-10585, is a type confusion bug where the engine misinterprets a block of memory 
-            as one type of object when it's actually something else. This flaw can lead to system crashes, arbitrary code execution, and when chained with other outstanding issues, 
-            potential full system compromise via a malicious HTML page.
-        </p>
-        <p>
-            The flaw was discovered and reported by the Google Threat Analysis Group and a patch for Windows, Apple and Linux environments is available now.
-        </p>
-        <p class="dateField">
-            21st September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250921-ChromePatch.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>TfL Hackers Charged</h3>
-        <p>
-            The National Crime Agency (NCA) in the UK <a href="https://www.nationalcrimeagency.gov.uk/news/two-charged-for-tfl-cyber-attack" target="NCAWin">have announced</a> 
-            that two men have been charged for the Transport for London (TfL) network intrusion on the 31st August 2024, believed to have been carried out by members of Scattered Spider.
-        </p>
-        <p>
-            Thalha Jubair (19) and Owen Flowers (18) were arrested at their home addresses on Tuesday 16th September and appeared at Westminster Magistrates Court on the 18th 
-            September after the Crown Prosecution Service authorised they be charged with conspiring together to commit unauthorised acts against TfL under the Computer Misuse Act.
-        </p>
-        <p>
-            Flowers was initially arrested for the TfL attack on the 6th September 2024, whereby NCA officers identified further potential evidence of offences against US healthcare companies. 
-            Flowers has therefore been also charged with conspiring with others to infiltrate and damage the networks of SSM Health Care Corporation and attempting to do the same to 
-            Sutter Health's networks, both in the U.S.
-        </p>
-        <p>
-            Jubair has been additionally charged under RIPA for failing to disclose the pin or passwords for devices seized from him.
-        </p>
-        <p>
-            Both individuals will appear at the Crown Court on the 16th October 2025. 
-        </p>
-        <p>
-            Hannah Von Dadelszen, Chief Crown Prosecutor for the CPS said:<br/>
-            &quot;The Crown Prosecution Service has decided to prosecute Thalha Jubair and Owen Flowers with computer misuse and fraud related charges - following a National Crime Agency 
-            investigation into a cyber-attack on the Transport for London network. Our prosecutors have worked to establish that there is sufficient evidence to bring the case to trial and that 
-            it is in the public interest to pursue criminal proceedings. We have worked closely with the National Crime Agency as they carried out their investigation.&quot;
-        </p>
-        <p class="dateField">
-            19th September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250919-TfLhackersCharged.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>NPM SBoM check System ( Part 2 )</h3>
-        <p>
-            On the back of the <a href="https://thecloudhacker.co.uk/articles/2025/20250917-franticDev.htm">recent frantic dev process</a> to verify our Software Bill of Materials, I ended up rejigging some hacked together code and 
-            providing it on my <a href="https://github.com/thecloudhacker/sboms" target="SBOMGitWin">Github Site</a> in the hope it's of use to others.
-        </p>
-        <p>
-            The codebase is a <strong>quick and dirty hack</strong>, so don't start hosting it on external endpoints as I've not run any testing against it and I know there's some older packages on there.
-        </p>
-        <p>
-            You will need to generate your own SBOM files before using the process, there's a bunch of tooling to provide that for you available online. Once you have that, then throw the sbom at the searcher.
-        </p>
-        <p>
-            Anyhow... there we have it. This was a week that was. I'm sure there will be plenty more weeks like this in the months and years ahead. 
-        </p>
-        <p>
-            Stay safe out there, friends.
-        </p>
-        <p class="dateField">
-            19th September 2025 || ARTICLE || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250919-franticDevPartTwo.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>NPM SBoM Check</h3>
-        <p>
-            The ever growing <a href="https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages" target="SocketWin">list of compromised NPM packages</a> (thank you, Socket, for tracking this!) 
-            is causing a pain to keep up with alongside work, and despite having a nice SBoM output from my dev teams, trying to manually keep up with checking was somewhat of a manual headache... especially after a huge deluge 
-            of compromised items into the list.
-        </p>
-        <p>
-            Cue several hours of scraping data from the 'net and some janky dev work on my side... 
-        </p>
-        <p>
-            I've pulled together a very quick and dirty system with worker functions and a web interface to help keep track of my system status. With the ability to throw a CSV of new entries at it every few hours as I need to it's certainly easier 
-            than manually entering data to search through the SBoM output from our systems. It's been a while since I've had to do this type of frantic dev in anger while holding down the other daily tasks to support teams, 
-            but it's working (!) and providing some feedback on the company codebase, so .. yay.. win for the old man with rusty skills.
-        </p>
-        <p>
-            I might end up forking a version of my code, tidying it a bit and providing on Github if this worm continues to help others in the same situation (be gentle, I'm tired and juggling way too much!).
-        </p>
-        <p>
-            I admit this whole situation feels reminiscent of dealing with the early 2000's worms at the beginning of my career in I.T. As with any worm the damn thing will keep popping up on unsuspecting developer machines and making it's way around. 
-            I suspect that this will linger around for quite some time, causing a headache for development, security and operational teams. There is much to learn from the incident and the nasty attack patterns it's using (the pushing to your own Github 
-            repos and marking private/internal repos as public is a high-level concern for me right now), with another &quot;we have to stop using long-term auth tokens&quot; comment hanging above the whole episode for package systems around the world.
-        </p>
-        <p>
-            Is anyone else frantically writing janky tooling for this at the moment ? I would imagine I'm not the only one hammering the keyboard and trying to work out ways of dealing with this type of attack.
-        </p>
-        <p class="dateField">
-            17th September 2025 || ARTICLE || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250917-franticDev.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Another Day, Another NPM Supply Chain Attack</h3>
-        <p>
-            Ah yes, it's another day ending in &quot;y&quot; so it must be time for another NPM supply chain attack. 
-        </p>
-        <p>
-            Today's list of affected NPM packages is <a href="https://www.stepsecurity.io/blog/ctrl-tinycolor-and-40-npm-packages-compromised#affected-packages" target="StepSecurity">quite extensive</a> and includes some code (bundle.js injected into each package) that tries to search for credentials by pulling and using TruffleHog. A great rundown was 
-            provided by <a href="https://www.stepsecurity.io/blog/ctrl-tinycolor-and-40-npm-packages-compromised" target="StepSecurity">Step Security</a>
-        </p>
-        <p>
-            The new compromise is much more convoluted, and has self-propagation included to further infect packages of the maintainer utilising the infected package. 
-        </p>
-        <p>
-            Yet another day that I'm having to run scanning of my company software bill of materials lists. Stay safe out there - I'm expecting more of the same as time passes with increasingly 
-            complex malware bundled into the supply chain.
-        </p>
-        <p class="dateField">
-            16th September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250916-anotherDayAnotherNPMissue.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Cybercrime groups down tools (for now)</h3>
-        <p>
-            In a post to <a href="https://breachforums.hn/" target="BreachWin">Breachforums</a>, fifteen of the more known cybercriminal groups including Scattered Spider and Lapsus$ have announced they are going dark. 
-        </p>
-        <p>
-            The announcement comes after a season of high-level intrusions into a range of companies such as Air France, Marks &amp; Spencer and Jaguar to name but three. In recent months 
-            a number of arrests have been made in relation to the groups with no update on the investigation as yet.
-        </p>
-        <p>
-            Citing that &quot;Our objectives having been fulfilled, it is now time to say goodbye.&quot; and further, &quot;The most stupid ... will enjoy our golden parachutes with the millions the group accumulated. 
-            Others will keep on studying and improving systems you use in your daily lives. In silence. Others finally will just go gentle into that good night.&quot;
-        </p>
-        <p>
-            As with many of the groups previously, it's likely there will be a shuffle of people, new groupings and diverging objectives. Some may hang up their tool belts and move on to new things 
-            with their lives and others may continue to yearn for the excitement and addictive thrill of the next pwn. I'm sure we'll see further arrests for those splashing cash and not staying dark, 
-            and as always some fallout and angry posts from disgruntled members.
-        </p>
-        <p>
-            Time will tell what happens next, but for now it seems, things will be a modicum quieter online... 
-        </p>
-        <p class="dateField">
-            15th September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250915-cyberGroupsDownTools.htm">Link || View</a>
-        </p>
-    </div>
-    
     
     
     
@@ -1094,6 +943,6 @@
     
     </div>
     <div class="footer">
-        <img src="./img/me_tophat.jpg" alt="TheCloudHacker" title="TheCloudHacker" width="30px" height="30px" class="roundpic" /> &copy; The Cloud Hacker 2025 || <a href="https://www.thecloudhacker.co.uk/sitemap.htm">Site Map</a>
+        <img src="./img/me_tophat.jpg" alt="TheCloudHacker" title="TheCloudHacker" width="30px" height="30px" class="roundpic" /> &copy; The Cloud Hacker 2026 || <a href="https://www.thecloudhacker.co.uk/sitemap.htm">Site Map</a>
     </div>
 </html>
