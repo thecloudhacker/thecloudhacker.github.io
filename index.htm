@@ -48,6 +48,37 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Another n8n Vulnerability</h3>
+        <p>
+            Oh it's a heavy time for n8n at the start of 2026 and today brings a CVSS score of 10.0 for the already terrified - this one aptly named &quot;Ni8mare&quot;.
+        </p>
+        <p>
+            Published in an <a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-v4pr-fm98-w9pg" target="n8nWin">advisory by n8n</a>, the team warns 
+            &quot;A vulnerability in n8n allows an attacker to access files on the underlying server through execution of certain form-based workflows. A vulnerable 
+            workflow could grant access to an unauthenticated remote attacker. This could result in exposure of sensitive information stored on the system and may 
+            enable further compromise depending on deployment configuration and workflow usage.&quot;
+        </p>
+        <p>
+            There are no official workarounds for the vulnerability, which affects all versions up to the fix in 1.121.0
+        </p>
+        <p>
+            The problem appears to be linked to the webhook and file handling mechanism and allows threat actors to leverage the security hole and read arbitrary files from the 
+            n8n instance and escalate further to RCE. Compromise of n8n doesn't just stop with the system itself, but yeilds credentials for other systems, stored data and tokens.
+        </p>
+        <p>
+            If you're running n8n, keep on patching.
+        </p>
+        <p class="dateField">
+            7th January 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260107-Anothern8nVulnerability.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>New n8n CVE</h3>
         <p>
             A new year, a new vulnerability in software the world is using merrily. The latest vulnerability in n8n comes hot on the heels of the 
