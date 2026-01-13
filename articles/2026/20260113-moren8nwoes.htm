@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" value="The Cloud Hacker - News and Info - More n8n Woes" />
+    <meta name="author" content="TheCloudHacker">
+    <title>The Cloud Hacker</title>
+    <link href="../../css/cloud.css" rel="stylesheet" media="screen" />
+    <link href="../../css/cloudprint.css" rel="stylesheet" media="print" />
+    <link href="../../css/cloudmobile.css" rel="stylesheet" media="mobile" />
+    <link href="../../css/cloudmobile.css" rel="stylesheet" media="screen" />
+    <!--
+     _   _                 _                 _   _                _             
+    | | | |               | |               | | | |              | |            
+    | |_| |__   ___    ___| | ___  _   _  __| | | |__   __ _  ___| | _____ _ __ 
+    | __| '_ \ / _ \  / __| |/ _ \| | | |/ _` | | '_ \ / _` |/ __| |/ / _ \ '__|
+    | |_| | | |  __/ | (__| | (_) | |_| | (_| | | | | | (_| | (__|   <  __/ |   
+     \__|_| |_|\___|  \___|_|\___/ \__,_|\__,_| |_| |_|\__,_|\___|_|\_\___|_|   
+    The Cloud Hacker
+    -->
+    <script>
+        console.log("The Cloud Hacker\n In the terminal for decades.");
+        console.log("You are in the Articles Stream reading something.");
+        console.log("Hack The Planet!");
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div  class="nav">
+            <br/><br/>
+            <ul>
+                <li><a href="https://www.thecloudhacker.co.uk">Home</a></li>
+                <li><a href="https://www.thecloudhacker.co.uk/about.htm">About</a></li>
+                <li><a href="https://www.thecloudhacker.co.uk/articles/">News</a></li>
+                <li><a href="https://www.github.com/thecloudhacker" target="gitwin">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/thecloudhacker/" target="linkwin">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@thecloudhacker" target="youwin">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="titleSection">
+            <span class="pic"><img src="../../img/me_tophat.jpg" alt="TheCloudHacker" title="TheCloudHacker" width="120px" height="120px" /></span>
+            <h1>The Cloud Hacker</h1>
+            <span class="mottoLine">Fortis Non Ferox</span>
+        </div>
+    <br/><br/>
+    <div class="columnDiv">
+        <h2>More n8n Woes</h2>
+        <p class="dateField">13th January 2026</p>
+        <p>
+            Obviously in the crosshairs of nefarious groups, n8n continues to suffer further woes with a discovery of supply chain attacks on eight 
+            packages on npm registry. <a href="https://www.endorlabs.com/learn/n8mare-on-auth-street-supply-chain-attack-targets-n8n-ecosystem" target="EndorWin">Endor Labs have uncovered</a> 
+            the first in a new wave of supply chain attacks on n8n and its community node ecosystem. 
+        </p>
+        <p>
+            Behaving like any other n8n integration once it is installed, it displays the usual configuration screens and saves the Google account OAuth tokens 
+            in encrypted format to the n8n credential store. When the workflow is executed, however, it runs code to decrypt the stored tokens using n8n's master 
+            key and then exfiltrates the credentials to a remote server.
+        </p>
+        <p>
+            The list of currently malicious packages is as follows:
+            <ul>
+                <li>n8n-nodes-hfgjf-irtuinvcm-lasdqewriit (4,241 downloads, author: kakashi-hatake)</li>
+                <li>n8n-nodes-ggdv-hdfvcnnje-uyrokvbkl (1,657 downloads, author: kakashi-hatake)</li>
+                <li>n8n-nodes-vbmkajdsa-uehfitvv-ueqjhhhksdlkkmz (1,493 downloads, author: kakashi-hatake)</li>
+                <li>n8n-nodes-performance-metrics (752 downloads, author: hezi109)</li>
+                <li>n8n-nodes-gasdhgfuy-rejerw-ytjsadx (8,385 downloads, author: zabuza-momochi)</li>
+                <li>n8n-nodes-danev (5,525 downloads, author: dan_even_segler)</li>
+                <li>n8n-nodes-rooyai-model (1,731 downloads, author: haggags)</li>
+                <li>n8n-nodes-zalo-vietts (4,241 downloads, authors: vietts_code and diendh)</li>
+            </ul>
+        </p>
+        <p>
+            Previous warnings on community node security risks have been issues by n8n and on self-hosted n8n instances it is strongly advised to disable community nodes 
+            by setting <strong>N8N_COMMUNITY_PACKAGES_ENABLED</strong> to false.
+        </p>
+        <p>
+            It is likely automation systems such as n8n along with CI/CD tooling will increasingly come under attack as workloads on them integrate with so many different 
+            platforms and hold high permission credentials. It is a reminder that security boundaries are not just around running platforms, but encircle the whole developer 
+            and operational environment. 
+        </p>
+        <hr />
+        <br/>
+        <p>
+            For a full list of news and articles head to the <a href="https://www.thecloudhacker.co.uk/sitemap.htm#article/">SiteMap Page</a>
+        </p>
+        <br/><br/>
+
+
+    </div>
+
+    <div class="clearfix"><br/><br/></div>
+    <div class="clearfix"><br/><br/></div>
+    <div class="clearfix"><br/><br/></div>
+    <div class="clearfix"><br/><br/></div>
+    
+    </div>
+    <div class="footer">
+        <img src="../../img/me_tophat.jpg" alt="TheCloudHacker" title="TheCloudHacker" width="30px" height="30px" class="roundpic" /> &copy; The Cloud Hacker 2026 || <a href="https://www.thecloudhacker.co.uk/sitemap.htm">Site Map</a>
+    </div>
+</html>

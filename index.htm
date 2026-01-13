@@ -46,6 +46,51 @@
     <br/><br/>
 
 
+
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>More n8n Woes</h3>
+        <p>
+            Obviously in the crosshairs of nefarious groups, n8n continues to suffer further woes with a discovery of supply chain attacks on eight 
+            packages on npm registry. <a href="https://www.endorlabs.com/learn/n8mare-on-auth-street-supply-chain-attack-targets-n8n-ecosystem" target="EndorWin">Endor Labs have uncovered</a> 
+            the first in a new wave of supply chain attacks on n8n and its community node ecosystem. 
+        </p>
+        <p>
+            Behaving like any other n8n integration once it is installed, it displays the usual configuration screens and saves the Google account OAuth tokens 
+            in encrypted format to the n8n credential store. When the workflow is executed, however, it runs code to decrypt the stored tokens using n8n's master 
+            key and then exfiltrates the credentials to a remote server.
+        </p>
+        <p>
+            The list of currently malicious packages is as follows:
+            <ul>
+                <li>n8n-nodes-hfgjf-irtuinvcm-lasdqewriit (4,241 downloads, author: kakashi-hatake)</li>
+                <li>n8n-nodes-ggdv-hdfvcnnje-uyrokvbkl (1,657 downloads, author: kakashi-hatake)</li>
+                <li>n8n-nodes-vbmkajdsa-uehfitvv-ueqjhhhksdlkkmz (1,493 downloads, author: kakashi-hatake)</li>
+                <li>n8n-nodes-performance-metrics (752 downloads, author: hezi109)</li>
+                <li>n8n-nodes-gasdhgfuy-rejerw-ytjsadx (8,385 downloads, author: zabuza-momochi)</li>
+                <li>n8n-nodes-danev (5,525 downloads, author: dan_even_segler)</li>
+                <li>n8n-nodes-rooyai-model (1,731 downloads, author: haggags)</li>
+                <li>n8n-nodes-zalo-vietts (4,241 downloads, authors: vietts_code and diendh)</li>
+            </ul>
+        </p>
+        <p>
+            Previous warnings on community node security risks have been issues by n8n and on self-hosted n8n instances it is strongly advised to disable community nodes 
+            by setting <strong>N8N_COMMUNITY_PACKAGES_ENABLED</strong> to false.
+        </p>
+        <p>
+            It is likely automation systems such as n8n along with CI/CD tooling will increasingly come under attack as workloads on them integrate with so many different 
+            platforms and hold high permission credentials. It is a reminder that security boundaries are not just around running platforms, but encircle the whole developer 
+            and operational environment. 
+        </p>
+        <p class="dateField">
+            13th January 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260113-moren8nwoes.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
     <div class="columnDiv">
         <!-- News Article -->
         <h3>Another n8n Vulnerability</h3>
@@ -575,387 +620,6 @@
         </p>
         <p class="dateField">
             1st November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251101-CanadianInfrastructureHack.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Docker Vulnerabilties</h3>
-        <p>
-            Another day, another set of patching to undertake on your development systems.
-        </p>
-        <p>
-            A new vulnerability in Docker Compose (CVE-2025-62725) has been given an 8.9 severity rating. Uncovered by Imperva's Ron Masas, the path-traversal 
-            vulnerability allows attackers to escape Compose's cache directory and write arbitrary files onto the host system. The vulnerability comes through a 
-            recently added support for OCI-based Compose artifacts. Users are recommended to upgrade to v2.40.2 of Docker Compose.
-        </p>
-        <p>
-            Docker has also fixed a flaw in the Windows installer that left it vulnerabile to DLL injection. ENISA tracked the issue as EUVD-2025-36191 with an 8.8 rating. 
-        </p>
-        <p>
-            The flaw in the installer allowed SLL hijacking due to insecure DLL search orders - at a time when DLL hijacking and injection has been a favourite of cybercriminal groups.
-        </p>
-        <p>
-            Patched in Desktop 4.49.0, users are encouraged to upgrade if they haven't already. The release notes also warn the next release onwards requires at least Windows 10 22H2 or Windows 11 23H2 
-            which could impact users on certain patch cycles.
-        </p>
-        <p class="dateField">
-            1st November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251101-dockerCompose.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>European Telco Compromised</h3>
-        <p>
-            The research team at Darktrace have uncovered activity in a European telecommunications organisation (currently no name shared) that matches 
-            patterns with the China-linked cyber espionage group Salt Typhoon.
-        </p>
-        <p>
-            Nathaniel Jones, Darktrace's vice president of security and AI strategy and field CISO along with Sam Lister, specialist security researcher at Darktrace 
-            published a blog post detailing some of the insights gained: &quot;The intrusion likely began with the exploitation of a Citrix NetScaler Gateway appliance 
-            in early July 2025... from there, the actor pivoted to Citrix Virtual Delivery Agent hosts in the client's Machine Creation Services subnet.... Initial access 
-            activities in the intrusion originated from an endpoint potentially associated with the SoftEther VPN service, suggesting infrastructure obfuscation from the outset&quot;
-        </p>
-        <p>
-            Darktrace observed the threat actor delivering a backdoor likely to be SNAPPYBEE to multiple Citrix VDA hosts, delivered as a DLL alongside legitimate 
-            executable files for antivirus software such as Norton and Bkav and IObit Malware Fighter.  
-        </p>
-        <p>
-            The Salt Typhoon group has a record of persistently evading detection while maintaining access to sensitive environments using a range of obfuscation techniques and 
-            zero-day exploits. It serves as a constant reminder to patch early and employ proactive, intelligence-driven defense strategies.
-        </p>
-        <p>
-            This is not the first telecommunications provider that the group has gone after and exploited and it is unlikely to be the last. 
-        </p>
-        <p class="dateField">
-            21st October 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251021-EuropeanTelcoExploited.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-    
-    
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>F5 Compromised</h3>
-        <p>
-            US security company, F5, has <a href="https://my.f5.com/manage/s/article/K000154696" target="F5win">issued a statement</a> stating it has had their systems 
-            compromised and data exfiltrated. 
-        </p>
-        <p>
-            The information taken from their systems includes a portion of the BIG-IP software codebase and vulnerability information which could lead to 
-            discovery of exploits in the hardware and software provided by F5. Affected Hardware F5 products include: BIG-IP iSeries, rSeries, or any other F5 device that has reached end of support, 
-            with software affected including all devices running BIG-IP (F5OS), BIG-IP (TMOS), Virtual Edition (VE), BIG IP Next, BIG- IQ, and BIG-IP Next for Kubernetes (BNK) / Cloud-Native Network Functions (CNF)
-        </p>
-        <p>
-            F5 states: <br/>
-            &quot;...we learned a highly sophisticated nation-state threat actor maintained long-term, persistent access to, and downloaded files from, certain F5 systems. These systems included our BIG-IP product development environment and engineering knowledge management platforms...&quot;
-        </p>
-        <p>
-            &quot;We have no evidence of access to, or exfiltration of, data from our CRM, financial, support case management, or iHealth systems. However, some of the exfiltrated files from our knowledge management platform contained configuration or implementation information for a small 
-            percentage of customers. We are currently reviewing these files and will be communicating with affected customers directly as appropriate.&quot;
-        </p>
-        <p>
-            In a change to recent global patterns of compromise, this doesn't appear to be a supply-chain attack and from their assessment appears to be a very targeted attack aimed at gaining knowledge on 
-            the BIG-IP software from F5. 
-        </p>
-        <p>
-            Management interfaces customers may have exposed to the Internet should be switced-off and the latest updates applied to systems. It is likely that F5 systems will be targeted increasingly and any 
-            attack surface open to the world will be prodded to discover possible weaknesses, therefore F5 have advised utilisation of SIEM tooling to monitor activity to and from your devices.
-        </p>
-        <p class="dateField">
-            16th October 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251016-f5compromise.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-    
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>The Scattered Lapsus$ Hunters Hokey Cokey</h3>
-        <p>
-            You put your hack crew in, you take your hack crew out, in out, in out, rattle sabres all about...
-        </p>
-        <p>
-            Oh, the hokey cokey... they're in they're out, they're back, they're scattering into the dark... it's the unusual and confusing world 
-            of the Scattered Lapsus$ Hunters group where they come out of retirement to head back into it again. 
-        </p>
-        <p>
-            It seems the group are having some tête-à-tête with the FBI after recent high-level attacks on systems and subsequent arrests and investigations. Formed 
-            as an amalgamation of key members from Scattered Spider, Lapsus$, and Shiny Hunters, the group has come under scrutiny again due to recent data drops from companies including Qantas, 
-            Vietnam Airlines, Gap, and Fujifilm.
-        </p>
-        <p>
-            The group stated in their usual &lt;sarcasm&gt;charming&lt;/sarcasm&gt; way:<br/>
-            &quot;As per the exceptional circumstances by which the FBI tried to obliterate our legacy, we've exceptionally decided to 
-            temporarily renounce to oblivion ... and promptly hack them back ... We shall now dissolve again in the ether. Good night.&quot;
-        </p>
-        <p>
-            As with all of the groups, there will be internal politics and power struggles along with grudges against agencies and personnel. How this plays out over 
-            the next few months will be seen in time, but for now, perhaps, maybe, possibly, they're hiding in the dark corners again - watching, waiting, listening.. 
-            (trolls reference, get it, trolls.. urgh, I'm wasted on this generation).
-        </p>
-        <p class="dateField">
-            13th October 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251013-lapsusHokeyCokey.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Discord Information leaked</h3>
-        <p>
-            Well, well, well, if it isn't the consequences of enforced age verification decisions coming back to bite you... brace for more of this over the coming 
-            weeks, months and years.
-        </p>
-        <p>
-            Discord has said around 70,000 users have had their data potentially leaked by a company that was contracted to undertake age verification. The 
-            information leaked includes photographs for age verification, personal details, support team chat information and partial credit card details. So just 
-            a few things to be concerned about.
-        </p>
-        <p>
-            Affected users have been contacted by Discord and the (surprise, surprise) third-party that was connected to Discord's systems has had access removed.
-        </p>
-        <p>
-            Again we see the side-chain attack in full flow with outsourced support companies failing in their duty to protect information. The list of companies 
-            affected by this type of attack is growing daily.
-        </p>
-        <p>
-            With the requirement for age verification firmly in place on many services, there is a need for the service providers to step-up their security. The 
-            rush to implement providers will undoubtedly have led to cost saving at the detriment to security.
-        </p>
-        <p>
-            Let's see what the actual toll is on Discord and which provider will be the next leaky bucket.
-        </p>
-        <p class="dateField">
-            9th October 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251009-discordHack.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Metropolitan Police arrest suspected nursery group hackers</h3>
-        <p>
-            The Metropolitan Police have confirmed they have arrested two 17-year-old individuals in the ongoing investigation into the 
-            Kido chain nursery hack that saw the names, addresses and photographs of children and their parents stolen in late September.
-        </p>
-        <p>
-            The hackers initially demanded a ransom of around £600,000 in Bitcoin to not release the details and began a campaign of contacting 
-            parents in the list to have them pressurise the nursery chain. When ransom money was seen to be not forthcoming the hackers began to 
-            publish the images and addresses of children in their data. 
-        </p>
-        <p>
-            If not already calous enough in setting a nursery as a target, this act of seems to have tipped the scales heavily against the criminals 
-            with the group suddenly blurring imagery on their site seemingly worried about negative reputation with other hacker groups. 
-        </p>
-        <p>
-           On the 2nd October the hackers suddenly removed all the stolen data and pictures from their site, claiming to have deleted all 8,000 files stating &quot;No more remains and this can comfort parents&quot;.
-        </p>
-        <p>
-           Was it external pressure from other groups, concern over the backlash in the media or some flake of moral concern? As yet we'll have to speculate.
-        </p>
-        <p>
-           The Metropolitan Police confirmed the hackers were arrested at residential addresses in Bishop's Stortford, Hertfordshire, on suspicion of computer misuse and blackmail. The investigation continues.
-        </p>
-        <p class="dateField">
-            8th October 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251008-nurseryHackersArrested.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>OpenAI boots suspected Chinese Gov accounts from ChatGPT</h3>
-        <p>
-            OpenAI published an <a href="https://cdn.openai.com/threat-intelligence-reports/7d662b68-952f-4dfd-a2f2-fe55b041cc4a/disrupting-malicious-uses-of-ai-october-2025.pdf" target="openAIwin">intelligence report</a> 
-            stating it has banned ChatGPT accounts it believes to be linked to Chinese government entities attempting to use AI models to generate 
-            surveillance software.
-        </p>
-        <p>
-            The users, now banned, were suspected to be utilising a VPN service to access the AI software from China. In one account, their requests to the AI models  
-            were seen to be asking it to design promotional materials and project plans for a social media listening tool, described as a &quot;probe&quot; that could 
-            scan X, Facebook, Instagram, Reddit, TikTok and YouTube for what the user described as extermist speech, ethnic, religious and political content.
-        </p>
-        <p>
-            The principal investigator on OpenAI's intelligence and investigations team said 
-            &quot;What we saw and banned in those cases was typically threat actors asking ChatGPT to help put together plans or documentation for AI-powered tools, but not then to implement them.&quot;.
-        </p>
-        <p>
-            The company also banned one user who asked ChatGPT to identify funding sources for an X account that criticised the Chinese government, and another who asked ChatGPT to identify organizers of a petition in Mongolia
-        </p>
-        <p>
-            Michael Flossman, who leads OpenAI's threat intelligence team said &quot;One China-linked cluster that we investigated, for example, used ChatGPT to draft phishing lures and then explored another model, DeepSeek, to automate mass targeting,&quot;.
-        </p>
-        <p>
-           China isn't alone in being banned as OpenAI has also seen system abuse originating from Russia asking the model to develop and refine malware, including remote access tojans, 
-           credential stealers and features to help malware evade detection.
-        </p>
-        <p>
-            AI is a growing concern for data exfiltration and as a weaponised tool allowing those who would normally be incapable of generating malware and campaigns the means to 
-            quickly and easily generate systems. We can only hope that the teams continue to implement stronger guard-rails and keep on top of security issues as we get to grips with 
-            the automated future we've released on ourselves.
-        </p>
-        <p class="dateField">
-            7th October 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251007-openAIbootsUsers.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Malicious Python Package</h3>
-        <p>
-            A malicious package on the Python Package Index (PyPI) repository has been caught and removed, but downloaded 2653 times since it appeared on the 26th September. 
-            Claiming to offer a SOCKS5 proxy service, it included malicious functionality to provide stealthy backdoors to Windows to enable the drop of additional payloads 
-            onto the machine.
-        </p>
-        <p>
-            JFrog's security research team provided a <a href="https://research.jfrog.com/post/check-your-socks-a-deep-dive-into-soopsocks-pypi/" target="JFROGWin">full breakdown of the package</a> citing:
-        </p>
-        <p>
-            &quot;The SoopSocks PyPI package (XRAY-725599) promises to create a SOCKS5 proxy service and report information about the server to a configurable Discord webhook, supporting fallback as a 
-            scheduled task. While providing this capability it exhibits behaviour as a Backdoor proxy server, targeting Windows platforms, using automated installation processes via VBScript or 
-            an executable version.&quot;
-        </p>
-        <p>
-            The malicious package included privilege escalation and reconnaissance capabilities, making it a danger to developer systems and servers. 
-        </p>
-        <p>
-            The team reported the package to maintainers after their analysis, and it was subsequently removed from PyPI on Sep 29, 18:00 GMT+3.
-        </p>
-        <p class="dateField">
-            3rd October 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251003-maliciousPythonPackage.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Cisco Vulnerbility Actively Exploited</h3>
-        <p>
-            The recently disclosed Cisco Vulnerabilities (CVE-2025-20333 and CVE-2025-20362) allowing access to endpoints and execution of code is now 
-            being actively exploited to deploy malware components such as LINE VIPER and RayInitiator, the 
-            <a href="https://www.ncsc.gov.uk/news/persistent-malicious-targeting-cisco-devices" target="NCSCWin">NCSC have stated</a>.
-        </p>
-        <p>
-            Cisco have warned vendors that &quot;"Attackers were observed to have exploited multiple zero-day vulnerabilities and employed advanced evasion techniques such as disabling logging, intercepting CLI commands, 
-            and intentionally crashing devices to prevent diagnostic analysis&quot;. There have been noted incidents where ROMMON has been modified to persist modifications after a reboot or software update.
-        </p>
-        <p>
-            ASA 5500-X Series models running Cisco ASA Software releases 9.12 or 9.14 with VPN web services enabled, and which do not support Secure Boot and Trust Anchor technologies have been compromised 
-            in this latest vulnerability attack. All of the affected devices have reached end-of-support (EoS) or are about to reach EoS status by next week including:<br/>
-            <ul>
-                <li>5512-X</li>
-                <li>5515-X</li>
-                <li>5525-X</li>
-                <li>5545-X</li>
-                <li>5555-X</li>
-                <li>5585-X</li>
-            </ul>
-        </p>
-        <p>
-            NCSC are urging network vendors to verify their traffic and systems, remediate through patching and potentially replace anything that is heading to EoL. 
-        </p>
-        <p>
-            &quot;It is critical for organisations to take note of the recommended actions highlighted by Cisco today, particularly on detection and remediation&quot;, said 
-            Ollie Whitehouse, the NCSC CTO. &quot;We strongly encourage network defenders to follow vendor best practices and engage with the NCSC's malware analysis report to assist with their investigations.<br/>
-            End-of-life technology presents a significant risk for organisations. Systems and devices should be promptly migrated to modern versions to address vulnerabilities and strengthen resilience.&quot;
-        </p>
-        <p>
-            Given the wide usage of the devices it is likely that we'll see an increase in compromise reports over the coming weeks.
-        </p>
-        <p class="dateField">
-            26th September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250926-ciscoVulnerabilityActivelyExploited.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Cisco SNMP Vulnerbility</h3>
-        <p>
-            Cisco has announced a new IOS and IOS XE vulnerability that is tracked as CVE-2025-20352 and has a 7.7 CVSS score. In an 
-            <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snmp-x4LPhte" target="ciscoWin">announcement by Cisco's Security team</a> they state 
-            &quot;This vulnerability affects Cisco devices if they are running a vulnerable release of Cisco IOS Software or Cisco IOS XE Software.
-            Meraki MS390 and Cisco Catalyst 9300 Series Switches that are running Meraki CS 17 and earlier are also affected. This is fixed in Cisco IOS XE Software Release 17.15.4a.&quot;
-        </p>
-        <p>
-            There are no workarounds for the issue, only mitigation through patching. The patch also includes a fix for a cross-site scripting vulnerability and 
-            a denial-of-service flaw. 
-        </p>
-        <p>
-            Administrators are advised to patch now and limit the access to their SNMP to trusted hosts. 
-        </p>
-        <p class="dateField">
-            25th September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250925-ciscoSNMPvulnerability.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>European Airport Hacker Nabbed by NCA</h3>
-        <p>
-            The National Crime Agency have arrested a man in West Sussex in connection with the European airport system hack that brought air travel to 
-            a grinding halt at the weekend and continues to cause issues into this week.
-        </p>
-        <p>
-            The attack against the Collins Aerospace technology check-in system caused widespread issues, travel problems and delays across Europe.
-        </p>
-        <p>
-            Officers from the NCA supported by the regional crimes unit arrested the man in his 40's on Tuesday evening on suspicion of Computer Misuse Act offences. 
-            He has subsequently been released on conditional bail.
-        </p>
-        <p>
-            &quot;Although this arrest is a positive step, the investigation into this incident is in its early stages and remains ongoing.&quot; said NCA deputy director, 
-            Paul Foster (head of the NCA's National Cyber Crime Unit). &quot;Cybercrime is a persistent global threat that continues to cause significant disruption to the UK. 
-            Alongside our partners here and overseas, the NCA is committed to reducing that threat in order to protect the British public&quot;
-        </p>
-        <p>
-            The investigation into the inicident continues with no specific cybercriminal gang claiming responsibility for the action as yet. 
-        </p>
-        <p>
-            As reiterated many times over the course of recent incidents, this sort of attack will continue and persistently prove that infrastructure is vulnerable to outside 
-            influences and attack. We will no doubt hear of further results from the investigation in due course.
-        </p>
-        <p class="dateField">
-            24th September 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20250924-AirportCheckInHackerNabbed.htm">Link || View</a>
         </p>
     </div>
     
