@@ -49,6 +49,41 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Palo Alto DoS Vulnerability</h3>
+        <p>
+            Palo Alto <a href="https://security.paloaltonetworks.com/CVE-2026-0227" target="PaloWin">have announce</a> a CVSS 7.7 vulnerability ( tracked as CVE-2026-0227 ) 
+            in the Global Protect PAN-OS software that permits a denial of service attack due to an improper check for exceptional conditions.
+        </p>
+        <p>
+            The issue affects:
+            <ul>
+                <li>PAN-OS 12.1 &lt; 12.1.3-h3, &lt; 12.1.4</li>
+                <li>PAN-OS 11.2 &lt; 11.2.4-h15, &lt; 11.2.7-h8, &lt; 11.2.10-h2</li>
+                <li>PAN-OS 11.1 &lt; 11.1.4-h27, &lt; 11.1.6-h23, &lt; 11.1.10-h9, &lt; 11.1.13</li>
+                <li>PAN-OS 10.2 &lt; 10.2.7-h32, &lt; 10.2.10-h30, &lt; 10.2.13-h18, &lt; 10.2.16-h6, &lt; 10.2.18-h1</li>
+                <li>PAN-OS 10.1 &lt; 10.1.14-h20</li>
+                <li>Prisma Access 11.2 &lt; 11.2.7-h8</li>
+                <li>Prisma Access 10.2 &lt; 10.2.10-h29</li>
+            </ul>
+        </p>
+        <p>
+            Palo Alto confirmed the issue  is applicable only to PAN-OS NGFW or Prisma Access configurations with an enabled GlobalProtect gateway or portal. The exceptional condition 
+            allows an unauthenticated attacker to cause a DoS, with repeated attempts resulting in the firewall entering maintenance mode. 
+        </p>
+        <p>
+            Whilst presently the attack does not appear to be actively used in the wild (as yet), it's important to ensure systems are patched as soon as possible.
+        </p>
+        <p class="dateField">
+            15th January 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260115-.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>More n8n Woes</h3>
         <p>
             Obviously in the crosshairs of nefarious groups, n8n continues to suffer further woes with a discovery of supply chain attacks on eight 
@@ -560,66 +595,6 @@
         </p>
         <p class="dateField">
             14th November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251114-claudeAIespionage.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Cisco Firewall Ongoing Attacks</h3>
-        <p>
-           Continuing on from the previous Cisco vulnerability in the wild reports, Cisco have uncovered an ongoing attack against Secure ASA Software or Cisco 
-           Secure FTD Software releases affected by CVE-2025-20333 and CVE-2025-20362.
-        </p>
-        <p>
-            The CVE's, which were patched in September after Cisco worked for several months with government agencies to investigate attacks on equipment, can lead 
-            to equipment being forced in a reboot cycle. In some cases, the ROMmon has been modified to estblish persistent connections to equipment even after rebooting 
-            or software upgrades.
-        </p>
-        <p>
-            The advice is clear and urgent - patch now. Cisco have more details on their <a href="https://sec.cloudapps.cisco.com/security/center/resources/asa_ftd_continued_attacks" target="CiscoWin">security advisory</a>.
-        </p>
-        <p>
-            Cisco also notified customers that they have discovered two critical security holes in the contact centre software, tracked as CVE-2025-20354 and CVE-2025-20358. They affect Cisco Unified CCX, regardless of device configuration 
-            and allow remote, unauthenticated attackers to upload arbitrary files; execute commands with root privileges; or bypass authentication to run scripts as a non-root user.
-        </p>
-        <p>
-            In plain terms, if you can't patch your systems, consider the hardware compromised or compromisable. If you have the ability, patch everything right now - turn off features or replace ageing equipment.
-        </p>
-        <p class="dateField">
-            7th November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251107-ciscoFirewallAttacks.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Canadian Infrastructure Hack</h3>
-        <p>
-            The Canadian Centre for Cyber Security <a href="https://www.cyber.gc.ca/en/alerts-advisories/al25-016-internet-accessible-industrial-control-systems-ics-abused-hacktivists" target="CanadaWin">issued an alert</a> to raise 
-            awareness of a cyber threat impacting critical infrastructure across Canada. 
-        </p>
-        <p>
-            Hacktivists have managed to breach municipal water facility systems along with an Oil and Gas company. In an effort to raise awareness of their own cause, the Hacktivists tampered with 
-            settings and guage readings at facilities, thankfully not causing major incidents or injury/death. 
-        </p>
-        <p>
-            The Canadian Centre for Cyber Security warns that the attack highlights the failings to secure critical national infrastructure, with the usual suspects of Internet connected systems that 
-            are vulnerable, open, or not adequately patched. PLC's, remote terminal units, human-machine interfaces, SCADA systems, safety controllers, building management setups and other IoT equipment 
-            left exposed and open to tamper from anyone on the Internet. 
-        </p>
-        <p>
-            Companies providing critical infrastructure and services must take stock of their systems and access points into the equipment they operate, or the next time it might not be 
-            a Hacktivist group raising awareness, but a nation state taking-out adversaries.
-        </p>
-        <p class="dateField">
-            1st November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251101-CanadianInfrastructureHack.htm">Link || View</a>
         </p>
     </div>
     
