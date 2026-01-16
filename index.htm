@@ -46,6 +46,37 @@
     <br/><br/>
 
 
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>AWS CodeBuild Flaw</h3>
+        <p>
+            The security company, Wiz, <a href="https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild" target="WizWin">discovered a critical flaw in AWS CodeBuild</a> ( dubbed CodeBReach by the team ) 
+            that could have potentially led to the complete takeover of AWS's own GitHub repositories and put every AWS account in the world at risk. The team noted it to be potentially worse than the SolarWinds supply chain attack.
+        </p>
+        <p>
+            Discovered back in August 2025, the team contacted AWS who then fixed the security hole in September 2025 before the system could be compromised by groups or agencies.
+        </p>
+        <p>
+            The team details the severity of the issue sternly in their finding report: &quot;The issue allowed a complete takeover of key AWS GitHub repositories - most notably the AWS JavaScript SDK, a core library that powers the AWS Console. By exploiting CodeBreach, attackers could have injected 
+            malicious code to launch a platform-wide compromise, potentially affecting not just the countless applications depending on the SDK, but the Console itself, threatening every AWS account.&quot;
+        </p>
+        <p>
+            In a tale as old as time, a couple of characters in a Regex filter allowed unauthenticated attackers to infiltrate the build environment and leak privileged credentials. Once again, the CI/CD pipeline is in focus as a 
+            security pain point. Whilst no action is necessary in this instance to resolve the primary issue, the team are advising a range of security measures to prevent untrusted pull requests triggering privileged builds and securing 
+            your GitHub connection with unique fine-grained personal access tokens for each CodeBuild project. 
+        </p>
+        <p>
+            A HUGE thanks need to go to the Wiz team by the world's user populous and a stern question for all our AWS account managers of &quot;why the hell am I hearing about this in global security news months after the event and not from you directly?&quot;.
+        </p>
+        <p class="dateField">
+            16th January 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260116-awsCodeBuildFlaw.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
 
     <div class="columnDiv">
         <!-- News Article -->
