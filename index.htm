@@ -48,6 +48,38 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>n8n Again</h3>
+        <p>
+            It's been a week, it's time for another notification of security issues with n8n, proving that sandboxing environments is hard, and secure automation 
+            is still struggling to keep up with language changes and weirdisms.
+        </p>
+        <p>
+            CVE-2026-1470 (9.9 CVSS) and CVE-2026-0863 (8.5 CVSS) have been <a href="https://research.jfrog.com/post/achieving-remote-code-execution-on-n8n-via-sandbox-escape/" target="JFrogWin">discovered and responsibly disclosed by the JFog team</a> 
+            and causes detailed eloquently on their site. 
+        </p>
+        <p>
+            CVE-2026-1470 relates to the expression feature that allows teams to set node parameters dynamically. You can execute JavaScript when encasing in parenthesis which is then supposed to 
+            rely on the Abstract Syntax Tree (AST)-based sandbox to validate the inherantly dangerous process of executing code. However, it would seem that you can't keep <strike>baby in the corner</strike> 
+            JavaScript from running amok whenever you use the &quot;WITH&quot; statement.
+        </p>
+        <p>
+            CVE-2026-0863 relates to the Python Code Node allowing users to execute Python code for processing. Again, an AST sandbox is employed to try to <strike>protect the crown jewels</strike> keep things safe, however it 
+            would appear that under error throw conditions it's possible to escape the prison and interact with the system. 
+        </p>
+        <p>
+            Fun stuff, just as I was thinking of playing with n8n this year. Guess I'll just break out the 8-bit microcomputers instead and disappear to a happier time in the land of computing.
+        </p>
+        <p class="dateField">
+            29th January 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260129-n8nAgain.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>Poland defends against power grid attack</h3>
         <p>
             In the last few days of 2025, Poland's cyber command forces defended against what has been described as &quot;the largest cyber attack&quot; targeting the power grid. The minister 
