@@ -48,6 +48,36 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Fortinet Fail</h3>
+        <p>
+            A new and actively exploited critical Fortinet SSO authentication bypass vulnerability, you say? Tell me more...
+        </p>
+        <p>
+            CVE-2026-24858 allows attackers to abuse FortiCloud SSO to gain administrative access to FortiOS, FortiManager, 
+            and FortiAnalyzer devices registered to other customers, <strong>even when those devices were fully patched against a previously disclosed vulnerability</strong>.
+        </p>
+        <p>
+            Bleeping Computer <a href="https://www.bleepingcomputer.com/news/security/fortinet-blocks-exploited-forticloud-sso-zero-day-until-patch-is-ready/" target="BleepWin">have a timeline of issues</a> 
+            with a slew of vulnerabilities lately causing customers to gnaw on their network cables and reach for the bottle of happy pills. 
+        </p>
+        <p>
+            According to the report, attackers with a FortiCloud account and a registered device could authenticate to other customers' devices if FortiCloud SSO was enabled. The advice? disable the SSO feature 
+            until they can fix it. Not a lot of comfort for users who rely on this service. 
+        </p>
+        <p>
+            If you are running Fortinet gear with SSO, consider your devices potentially breached at this point and start the cleanup / rotation of credentials to be safe.
+        </p>
+        <p class="dateField">
+            29th January 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260129-fortinetFail.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>n8n Again</h3>
         <p>
             It's been a week, it's time for another notification of security issues with n8n, proving that sandboxing environments is hard, and secure automation 
@@ -635,87 +665,6 @@
         </p>
         <p class="dateField">
             27th November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251127-jsonDataLeaks.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>U.S. Worker guilty of sabotage on ex-employer</h3>
-        <p>
-            A U.S. worker in Ohio has pleaded guilty of sabotaging his ex-employer's computer systems causing $862,000 worth of damage. The 35-year old contractor, 
-            Maxwell Shultz, impersonated another contractor to operate powershell scripts and attempt to cover his tracks by removing logs after being 
-            fired from the unnamed company.
-        </p>
-        <p>
-            The scripts reset the passwords to around 2,500 accounts on the system and caused the stated damage cost in downtime, disruption to customer services and 
-            remediation. 
-        </p>
-        <p>
-            Maxwell will be sentenced at the end of January, facing up to ten years in prison and up to $250,000 in fines. 
-        </p>
-        <p>
-            Yet another case of disgruntled employees with too much access to systems highlights the need to have sanitation routines on passwords, keys and systems when 
-            offboarding employees with wide-ranging access.
-        </p>
-        <p class="dateField">
-            22nd November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251122-usWorkerGuiltyOfSabotage.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Chrome Zero Day Vulnerability</h3>
-        <p>
-           Google have announced a critical patch required for Chrome with a <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-13223" target="ChromeWin">0-day in the wild</a> targeting the 
-           JavaScript V8 engine. The vulnerability can lead to a crafted web page crashing or running code on your machine, so updating to the latest version should be on your 
-           priority list.
-        </p>
-        <p>
-            A second, &quot;no exploits reported&quot; emergency patch for V8 JavaScript is also bundled into the update. 
-        </p>
-        <p>
-            This will be the seventh 0-day in Chrome this year, at a time when known nation-state linked groups are actively abusing 0-day exploits in their attack vectors.
-        </p>
-        <p class="dateField">
-            19th November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251119-chromeVulnerability.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Claude AI used for cyber espionage</h3>
-        <p>
-           In a <a href="https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf">security report from Anthropic</a>  the first catalogued usage of AI tools 
-           to attempt access to over thirty high-profile companies and government organisations. In some cases, the attacks was successful.
-        </p>
-        <p>
-            Traced-back to a Chinese state-sponsored group, the attackers used Claude Code and Model Context Protocol (MCP) to run the attacks without a human in the tactical execution loop. 
-            A human-developed framework utilised Claude to orchestrate multi-stage attacks, which were then in-turn carried out by several Claude sub-agents, all performing specific tasks. 
-            Once the sub-agents had developed exploit chains and their associated custom payloads, human operators spent between two and ten minutes reviewing the results of the AI's actions, then signing-off on the subsequent exploitations.
-            The sub-agents ran to find and validate credentials, escalate privileges, moving laterally across the network, accessing and then stealing sensitive data. Post-exploitation, the human operator only had to again review the AI's 
-            work before approving the final data exfiltration.
-        </p>
-        <p>
-            &quot;While we predicted these capabilities would continue to evolve, what has stood out to us is how quickly they have done so at scale&quot; states Anthropic's new analysis. As with standard AI, it &quot;requently overstated findings and occasionally 
-            fabricated data during autonomous operations&quot;. So, it's not just normal development teams suffering from the cocky and erroneous &quot;I'm amazing!&quot; responses from AI.
-        </p>
-        <p>
-            It may be the first documented case, but with the rise of automated systems it is unlikely to be the solitary example in the news.
-        </p>
-        <p class="dateField">
-            14th November 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251114-claudeAIespionage.htm">Link || View</a>
         </p>
     </div>
     
