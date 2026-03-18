@@ -46,6 +46,41 @@
     <br/><br/>
 
 
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>Telnet Flaw enables unauthenticated root RCE</h3>
+        <p>
+            Dream Security have <a href="https://dreamgroup.com/vulnerability-advisory-pre-auth-remote-code-execution-via-buffer-overflow-in-telnetd-linemode-slc-handler/#" target="DreamWin">disclosed a flaw in Telnet</a> that 
+            is tracked as CVE-2026-32746 and carries a CVSS score of 9.8. Discovered last week, it affects all versions of the Telnet service implementation through 2.7 and, through  
+            sending a specially crafted message during the initial connection handshake, can result in remote code execution as root.
+        </p>
+        <p>
+            Those out there sneering at the use of Telnet in today's security domain probably haven't worked with the layers of legacy equipment that still relies on the 
+            protocol for remote connection. 
+        </p>
+        <p>
+            &quot;No login is required; the bug is hit during option negotiation, before the login prompt. The overflow corrupts memory and can be turned into arbitrary writes. 
+            In practice, this can lead to remote code execution. Because telnetd usually runs as root (e.g., under inetd or xinetd), a successful exploit would give the attacker 
+            full control of the system&quot; Adiel Sol from Dream Security writes. 
+        </p>
+        <p>
+            In the absence of a current fix, users are advised to:
+            <ul>
+                <li>Disable the telnetd service if it is not required</li>
+                <li>Run telnetd without root privileges where it is required</li>
+                <li>Block port 23 at the network perimeter and host-based firewall level to restrict access and isolate Telnet access</li>
+            </ul>
+        </p>
+        <p class="dateField">
+            18th March 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260318-telnetVulnerability.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+
 
     <div class="columnDiv">
         <!-- News Article -->
