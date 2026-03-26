@@ -48,6 +48,68 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>LiteLLM Compromised</h3>
+        <p>
+            Python Package Index have removed two versions of LiteLLM, the open source interface for accessing multiple large language models after a supply-chain attack 
+            injected them with credential-stealing code.
+        </p>
+        <p>
+            LiteLLM v1.82.7 and v1.82.8 have been removed due to malware in the litellm_init.pth file. The compromise appears to have originated form the use of Trivy in the project's 
+            CI/CD pipeline. According to details from <a href="https://www.aquasec.com/blog/trivy-supply-chain-attack-what-you-need-to-know/" target="AquaWin">>Aqua Security</a>, the 
+            attackers took advantage of a misconfiguration in Triby's GitHub Actions environment to steal a privileged access token allowing the manipulation of CI/CD, and the 
+            subsequent push of malicious Trivy versions ( v0.69.5 and v0.69.6 ) as DockerHub images.
+        </p>
+        <p>
+            The advisory warns anyone who has installed and run the project should assume any credentials available to the LiteLLM environment have been exposed and should be revoked or 
+            rotated immediately.
+        </p>
+        <p class="dateField">
+            25th March 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260326-.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>FCC Blocks Foreigners</h3>
+        <p>
+            In a country where Cisco kit used to be tampered with before export, the Government have now decided they don't want to potentially import foreign back doors 
+            into their marketplace through hardware and software.
+        </p>
+        <p>
+            The FCC have created a <a href="https://www.fcc.gov/supplychain/coveredlist" target="FCCWin">list of vendors</a> that will now be unable to send new equipment to the US until they are verified and approved .
+        </p>
+        <p>
+            The manufacturer equipment is &quot;deemed to pose an unacceptable risk to the national security of the United States or the security and safety of United States persons, based exclusively on any of four 
+            sources for such a determination and that such equipment or services possess certain capabilities as enumerated in section 2(a) of the Secure and Trusted Communications Networks Act of 2019&quot;, 
+            according to the ruling. 
+        </p>
+        <p>
+            What it means in practice is that vendors are now selling the stock they have and citizens are free to utilise equipment they own, but new imports are blocked until they are cleared by the FCC. 
+        </p>
+        <p>
+            The ruling determines &quot;Any new router made outside the US will now need to be approved by the FCC before it can be imported, marketed, or sold in the country.&quot;, which is ironic as Cisco and Netgear 
+            build their equipment off-shore. Starlink is one of the only manufacturers to actually build equipment out of the 'States.
+        </p>
+        <p>
+            What will this mean in practice for organisations? Either higher costs for equipment, or utilisation of older, out-of-date equipment leading to potentially weaker security, most likely. Expect eBay prices for 
+            routers to go through the roof over the coming year.
+        </p>
+        <p class="dateField">
+            25th March 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260325-fccBlocksForeigners.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>Telnet Flaw enables unauthenticated root RCE</h3>
         <p>
             Dream Security have <a href="https://dreamgroup.com/vulnerability-advisory-pre-auth-remote-code-execution-via-buffer-overflow-in-telnetd-linemode-slc-handler/#" target="DreamWin">disclosed a flaw in Telnet</a> that 
