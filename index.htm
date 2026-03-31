@@ -48,6 +48,39 @@
 
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>Axios Supply Chain Hack</h3>
+        <p>
+            The HTTP client, Axios, has been the victim of a supply chain attack after two new published versions (1.14.1 and 0.30.4) of the npm package included a malicious dependency, 
+            injecting plain-crypto-js.
+        </p>
+        <p>
+            The two versions were found to have been published using compromised npm credentials of the primary Axios maintainer, allowing the attackers to bypass the project's GitHub Actions CI/CD 
+            pipeline. <a href="https://socket.dev/blog/axios-npm-package-compromised" target="socketWin">Socket have a nice breakdown</a> of the issue with details of the payload.
+        </p>
+        <p>
+            Users who have Axios versions 1.14.1 or 0.30.4 installed are required to immediately downgrade to a safe version and rotate credentials. The malicious versions have now 
+            been removed from npm. 
+        </p>
+        <p>
+            Anyone who has installed the affected versions is also advised to remove plain-crypto-js form the node_modules directory and check for RAT artifacts. It is also advised to 
+            audit your CI/CD pipelines and block egress traffic to the command-and-control domain &quot;sfrclak dot com&quot;.
+        </p>
+        <p>
+            Supply chain compromises will continue to be an ongoing issue as they work and fly under the radar in many cases. As always, lock your deployed software versions, ensure you have 
+            pipeline security scanning and maintain cool-off periods before deploying new versions anywhere near systems, never bleeding-edge production!
+        </p>
+        <p class="dateField">
+            31st March 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260331-AxiosSupplyChainHack.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>LiteLLM Compromised</h3>
         <p>
             Python Package Index have removed two versions of LiteLLM, the open source interface for accessing multiple large language models after a supply-chain attack 
