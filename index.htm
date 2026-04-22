@@ -50,6 +50,35 @@
         <!-- News Article -->
         <h3>Axios Supply Chain Hack</h3>
         <p>
+            Another day, another supply chain compromise, but this time within tooling used by vulnerability scanning. The Checkmarx KICS dockerhub repository was 
+            compromised with malicious images that overwrote existing tags. Uncovered by <a href="https://socket.dev/blog/checkmarx-supply-chain-compromise" target="SocketWin">the team at Socket</a>, 
+            the analysis shows the binary was modified to include data collection and exfiltration routines. 
+        </p>
+        <p>
+            The evidence gathered showed uncensored scan reports were generated, encrypted and sent to an external address. This could potentially lead to the exfiltration of 
+            passwords or secrets and sensitive vulnerability information being utilised by attackers without the knowledge of the business utilising the scanning software.
+        </p>
+        <p>
+            KICS is utilised in a range of companies and in systems such as Datadog's IaC scanning software, leading to the potential for wider-scale compromise of 
+            businesses utilising their software. The new normal, it would appear, is that everywhere is being hit with supply chain attacks to work towards targets. 
+        </p>
+        <p>
+            As always, keep an eye on the things that are watching things. I'm sure there's an old Soviet adage that could be employed here...
+        </p>
+        <p class="dateField">
+            22nd April 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260422-kicsCompromise.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>Axios Supply Chain Hack</h3>
+        <p>
             The HTTP client, Axios, has been the victim of a supply chain attack after two new published versions (1.14.1 and 0.30.4) of the npm package included a malicious dependency, 
             injecting plain-crypto-js.
         </p>
