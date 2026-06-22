@@ -46,6 +46,79 @@
     <br/><br/>
 
 
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>Canada Secretly Cleans Botnet-Infected Devices</h3>
+        <p>
+            The Canadian Security Intelligence Service was <a href="https://www.fct-cf.ca/en/pages/media/news-bulletins/file-c-6-24" target="canadaGovWin">given a warrant</a> 
+            for threat reduction measures in a first-of-it's-kind ruling allowing them to 
+            &quot;alter, degrade, and destroy botnet data on the infected machines and cut the devices loose from the networks&quot;. In other words, 
+            hack into devices, remove the crud and patch the infrastructure without the owner's intervention.
+        </p>
+        <p>
+            Involved in the Botnet were Canada-based servers, small office and home office routers, Internet-of-things devices, Ring doorbells, 
+            Security Cameras, TV's and Wifi-enabled devices.
+        </p>
+        <p>
+            Whilst the motive of preventing loss, theft of details, denial of service over services and further illegal activity, the modification of services 
+            and hardware with persistent fixes presents an ethical conundrum. Canada's court found the threat clearly established and imminent with the measures 
+            deemed necessary, reasonable and proportional. Do the end users and customers, however?
+        </p>
+        <p>
+            Reaching into a device that is not your own and wiping data is classified as computer mischief under the Criminal Code, hence the required court ruling 
+            before undertaking the work. It is not clear, however, how the agency collected information leading up to the request.
+        </p>
+        <p>
+            Should the customers have been notified first or in the process? Answers on a postcard...
+        </p>
+        <p class="dateField">
+            22nd June 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260622-CanadaSecretBotnetCleanup.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>Google security researcher denied earnings</h3>
+        <p>
+            Following on from <a href="https://www.thecloudhacker.co.uk/articles/2026/20260602-MicrosoftZeroDaySpat.htm">Microsoft's recent spat</a>, Google decided it wanted in on the action 
+            in denying researchers the finders fee they promised. In a recent bug report marked as high priority with a representative telling bug hunter, 
+            Justin O'Leary, &quot;Nice Catch!&quot;, Google made a U-turn and decided that it wasn't an issue after all, but by design. Ah yes, that old chestnut eh?
+        </p>
+        <p>
+            Justin has published a <a href="https://olearysec.com/research/config-connector-authorization-bypass/" target="olearyWin">nice blog article</a> about the 
+            vulnerability which allows complete organisation takeover in Kubernetes namespaces with zero GCP permission.
+        </p>
+        <p>
+            After the initial praise in finding the bug, Google responded by saying &quot;Cloud Vulnerability Reward Program panel has decided that the security impact of this issue does not meet the criteria to qualify for a reward.&quot;. 
+            Why so? you may ask? - &quot;Rationale: We have reviewed your report and determined that the issue you described is working as intended. The Config Connector Service Account requires the organization admin role for the reported scenario 
+            to be exploitable which is not recommended and breaks best practice.&quot;. 
+        </p>
+        <p>
+            There is but one small fly in the soup, however - and that being that Google actually demonstrates this practice in their help documents. Oooops!
+        </p>
+        <p>
+            So, how do we think security researchers with tasty zero-days are feeling right now? Pretty underappreciated and ready to drop hot potatoes all over the Internet is 
+            probably how you would expect. What the fallout of these big name brands reneging on their security research bounties will be over the coming months and years will 
+            be interesting to watch closely. We could either see responsible investigations and support hardening platforms dwindling, leading to epic unknown vulnerabilities, or 
+            a reduction in responsible disclosure and a higher quantity of public vulnerability information being thrown across the Internet.
+        </p>
+        <p>
+            One can only imagine the heated conversations between staff right now on both sides of this argument.
+        </p>
+        <p class="dateField">
+            21st June 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20260621-GoogleSecurityResearcher.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
 
     <div class="columnDiv">
         <!-- News Article -->
@@ -834,100 +907,6 @@
     <p class="breakdiv">
         &nbsp;
     </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>New AWS Crypto Miner attack</h3>
-        <p>
-            It's been a thorn in the side for AWS-based companies for at least ten years now, and it's taken an interesting new turn. The deployment of 
-            crypto mining infrastructure from exposed or stolen keys has been a vast financial sink hole for countless companies, but 
-            <a href="https://aws.amazon.com/blogs/security/cryptomining-campaign-targeting-amazon-ec2-and-amazon-ecs/" target="AWSwin" >Amazon have uncovered </a>
-            a new variant which has a sneaky attack mode targeting EC2 and ECS.
-        </p>
-        <p>
-            Once a key has been swiped by the criminal, resources and permissions are quickly enumerated before deploying the crypto mining resources across EC2 and ECS. 
-            The multi-stage attack begins with a discovery phase, running probes with the stolen IAM credentials to test permissions by using the --DryRun flag. This enables 
-            the attacker to validate IAM permissions without launching infrastructure, avoiding cost increase triggers and minimising forensic evidence. 
-        </p>
-        <p>
-            The process continues with a CreateServiceLinkedRole and CreateRole phase to generate IAM roles for autoscaling groups and AWS Lambda, then attaching the 
-            AWSLambdaBasicExecutionRole policy. The ECS clusters deployed then register a malicious DockerHub image ( yenik65958/secret:user ) , creating a service using the 
-            task definition to initiate crypto mining on ECS Fargate nodes. The DockerHub image has been thankfully taken down ( after over 100,000 pulls ), however the data 
-            shows it configured to initiate a shell script on launch to start cryptocurrency mining using the RandomVIREL mining algorithm. The threat actor has also been observed 
-            to exploit EC2 service quotas to maximise resource consumption with scaling between 20 and 999 instances, targeting both high-performance GPU and machine learning 
-            instances as well as compute, memory and GP instances.
-        </p>
-        <p>
-            The attack also stands out for it's use of the ModifyInstanceAttribute action to enable termination protection, preventing instances from being terminated using the 
-            EC2 console, CLI or API. This action makes response to the incident more involved and shows an understanding of the standard clean-up practices.
-        </p>
-        <p>
-            Amazon reccomends GuardDuty is in place and enabled on all accounts and regions with Runtime monitoring enabled, along with integration to the Security Hub. As always, 
-            strong IAM controls are critically important with temporary keys instead of long-term access keys and enforced MFA on all accounts. Least privilege permissions should be 
-            the default as always and ship those logs to review easily as necessary by your teams!
-        </p>
-        <p class="dateField">
-            17th December 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251217-awsCryptoMiners.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>React2Shell Attacks Accelerate</h3>
-        <p>
-            The React2Shell server-side vulnerability ( CVE-2025-55182 ) that dropped this month is quickly becoming a growing issue for sites across the Internet. With the 
-            React Server Components and dependent frameworks ( such as Next.js ) being so utilised across websites, this vulnerability is a huge concern. The unsafe 
-            deserialisation allows unauthenticated attackers to send crafted requests to achieve remote code execution. A single exposed endpoint can provide an entry point to 
-            larger estates, particularly worrying for multi-hosting servers. 
-        </p>
-        <p>
-            <a href="https://www.huntress.com/blog/peerblight-linux-backdoor-exploits-react2shell" target="huntressWin">Huntress have a great breakdown</a> of the issue with latest 
-            insights into the observed groups exploiting the vulnerability in the wild.
-        </p>
-        <p>
-            It would appear that a lot of sites are still wide open and vulnerable to the exploit, which (if you haven't patched yet) you should consider pwn3d.
-        </p>
-        <p>
-            Paolo Alto Networks' Unit 42 have also <a href="https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/" target="PaoloWin">linked the exploitation</a> to North Korean and Chinese threat groups.
-        </p>
-        <p>
-            Fun times for all right before the festive period. Patch, patch and patch before <a href="https://en.wikipedia.org/wiki/Santa_Claus:_The_Movie" target="SantaClausTheMovie">Santa Claus and Patch</a> turn up this Christmas!
-        </p>
-        <p class="dateField">
-            12th December 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251212-react2shellAttacks.htm">Link || View</a>
-        </p>
-    </div>
-    
-    <p class="breakdiv">
-        &nbsp;
-    </p>
-
-    <div class="columnDiv">
-        <!-- News Article -->
-        <h3>Another Chrome &quot;Patch Now&quot; Drop</h3>
-        <p>
-            Google have pushed security updates for the Chrome browser to fix <a href="https://chromereleases.googleblog.com/2025/12/stable-channel-update-for-desktop_10.html" target="ChromeWin">three security flaws</a> with one being found under active exploitation. The team 
-            are keeping the details under close guard until enough of the userbase has upgraded to the latest patched versions.
-        </p>
-        <p>
-            &quot;Access to bug details and links may be kept restricted until a majority of users are updated with a fix. We will also retain restrictions if the bug exists in a third party library that other projects similarly depend on, but haven’t yet fixed.&quot;
-        </p>
-        <p>
-            The update <strong>143.0.7499.109/.110</strong> on Windows or Mac and <strong>143.0.7499.109</strong> on Linux are the current patched versions. It's important to ensure you run the update as soon as possible.
-        </p>
-        <p>
-            This update takes the quantity of zero-day flaws to eight this year. Thankfully the security teams are actively engaged in seeking and resolving issues before they reach the stable channel. The latest updates continue 
-            to prove that continuous patching cycles are necessary to maintain a strong security posture. 
-        </p>
-        <p class="dateField">
-            11th December 2025 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2025/20251211-chromeUpdates.htm">Link || View</a>
-        </p>
-    </div>
     
     
     
