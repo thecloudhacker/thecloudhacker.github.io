@@ -149,7 +149,7 @@
         display: block;
         height: auto;
         margin: 0px 50px 50px 50px;
-        
+        background: rgba(0,0,0,0.5)
     }
     .titleSection{
         padding-top: 20px;
