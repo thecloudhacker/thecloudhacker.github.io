@@ -51,7 +51,7 @@
         margin-top: 0%;
     }
     h3{
-        font-size: 1.8em;
+        font-size: 1.9em;
         font-family: SmoochSans, courier, arial;
         color: #ffffff;
         padding-top: 0%;
@@ -70,6 +70,43 @@
         background-color: #f78400;
         color: #ffffff;
     }
+    .seasonalItem{
+        width: 210px;
+        height: auto;
+        top: 40px;
+        left: 0;
+        position: fixed;
+    }
+    
+    .seasonalItem img{
+        width: auto;
+        max-width: 210px;
+        height: auto;
+    }
+    .seasonalItem img:hover{
+        transform: translate(-250px);
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    #slide {
+        position: absolute;
+        left: -210px;
+        background: #000000;
+        -webkit-animation: slide 0.5s forwards;
+        -webkit-animation-delay: 4s;
+        animation: slide 1.5s forwards;
+        animation-delay: 2s;
+        transition: all 2.3s ease-in-out 0s;
+    }
+
+    @-webkit-keyframes slide {
+        100% { left: 0; }
+    }
+
+    @keyframes slide {
+        100% { left: 0; }
+    }
+
     .nav{
         display: block;
         font-family: SmoochSans, courier, arial;
@@ -126,7 +163,7 @@
     .pic img:hover{
         border: 2px dashed #f78400;
         transform: rotate(360deg);
-        transition: all 0.3s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
     }
     .roundpic{
         border: 2px solid #ffffff;

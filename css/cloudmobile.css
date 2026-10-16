@@ -61,6 +61,20 @@
         background-color: #f78400;
         color: #ffffff;
     }
+
+    .seasonalItem{
+        visibility: hidden;
+        display: none;
+    }
+    .seasonalItem img{
+        visibility: hidden;
+        display: none;
+    }
+    #slide {
+        visibility: hidden;
+        display: none;
+    }
+
     .nav{
         display: block;
         font-family: SmoochSans, courier, arial;
