@@ -234,4 +234,18 @@
         transform: scale(1.5);
         transition: all 0.3s ease-in-out 0s;
     }
+    .dateTable{
+        display: block;
+        width: 100%;
+    }
+    .dateTable th{
+        background-color: #f78400;
+        color: #ffffff;
+        font-size: 1.2em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .dateTable td{
+        padding: 0px 20px 0px 20px;
+    }
 }
