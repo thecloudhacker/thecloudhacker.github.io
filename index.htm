@@ -46,6 +46,72 @@
         </div>
     <br/><br/>
 
+    
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>PHP Critical Remote Code Execution Vulnerability</h3>
+        <p>
+            It is the season for bonfires, after all, and this week has been one of those weeks the security industry gazes on the growing flames and wonders 
+            when the world will stop pouring petrol on the flames...
+        </p>
+        <p>
+            PHP announced updates (8.5.12, 8.4.27, 8.3.36 and 8.2.35) to fix two critical vulnerabilities that can allow unauthenticated remote code execution. 
+            All PHP users are strongly encouraged to update immediately (the NCSC went one further to suggest if patching is not possible, take the systems offline).
+        </p>
+        <p>
+           Two CVE's are tracked against this one - CVE-2026-109618 (RCE via RFC 1867 input parsing OOM) and CVE-2026-109619 (RCE via global state corruption after fatal error). 
+        </p>
+        <p>
+            &quot;There are no complete mitigations, updating is the only safe choice&quot;, states the PHP website, as exploits will be in full swing now across the Internet.
+        </p>
+        <p>
+            <a href="https://www.php.net/archive/2026.php#2026-10-21-5" target="phpWin">The PHP Site</a> has more detail starting to flow in related to this critical issue.
+        </p>
+        <p class="dateField">
+            21st October 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20261021-phpBonfire.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
+        <h3>eMudhra Intermediate Certificate Authority Compromise</h3>
+        <p>
+            eMudhra, an Indian Certificate Authority, sells certificates under the emSign brand through companies in India, the United States, and the Netherlands. It also has roots in the Mozilla, Chrome, and Apple root stores, which is 
+            where things started escalating very quickly as eight of the keys for eMudhra intermediate CA certificates becomae compromised on the 20th October.
+        </p>
+        <p>
+            A researcher reported the compromise to the root programs on the evening of 17th October, and after Chrome verified the findings, Chrome and Firefox blocked the eight certificates within hours. 
+            Thankfully, &quot;No TLS certificate chaining to the six intermediates used for websites had been logged to Certificate Transparency (CT) before Chrome's block, so none could have been trusted by default in Chrome 
+            or any other browser that requires CT logging&quot;, the Chrome Root Program reported.
+        </p>
+        <p>
+            The keys were not actually stolen, but were generated with too little randomness, meaning anyone could compute them from the public certificates. 
+        </p>
+        <p>
+            eMudhra said &quot;...a flaw in the April 2025 ceremony that created the certificates produced a second, weak set of keys alongside the intended ones, 
+            and that the weak set is what was published to the browser root stores&quot;.
+        </p>
+        <p>
+            Development tools are caught up in the mess, not just the browser providers. While browsers have revocation pushed to them, tooling and programs that check TLS certificates, from Go binaries to anything 
+            using Python's certifi bundle, do not check revocation data and keep trusting a chain until their code or their root bundle changes. 
+        </p>
+        <p>
+            For now, update browsers, run brew updates on machines and check for vulnerabilities in your library versions in your codebase.
+        </p>
+        <p class="dateField">
+            20th October 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20261020-eMudhra.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+
 
 
     <div class="columnDiv">

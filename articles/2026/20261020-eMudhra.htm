@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" value="The Cloud Hacker - News and Info - eMudhra Intermediate Certificate Authority Compromise" />
+    <meta name="author" content="TheCloudHacker">
+    <title>The Cloud Hacker</title>
+    <link href="../../css/cloud.css" rel="stylesheet" media="screen" />
+    <link href="../../css/cloudprint.css" rel="stylesheet" media="print" />
+    <link href="../../css/cloudmobile.css" rel="stylesheet" media="mobile" />
+    <link href="../../css/cloudmobile.css" rel="stylesheet" media="screen" />
+    <!--
+     _   _                 _                 _   _                _             
+    | | | |               | |               | | | |              | |            
+    | |_| |__   ___    ___| | ___  _   _  __| | | |__   __ _  ___| | _____ _ __ 
+    | __| '_ \ / _ \  / __| |/ _ \| | | |/ _` | | '_ \ / _` |/ __| |/ / _ \ '__|
+    | |_| | | |  __/ | (__| | (_) | |_| | (_| | | | | | (_| | (__|   <  __/ |   
+     \__|_| |_|\___|  \___|_|\___/ \__,_|\__,_| |_| |_|\__,_|\___|_|\_\___|_|   
+    The Cloud Hacker
+    -->
+    <script>
+        console.log("The Cloud Hacker\n In the terminal for decades.");
+        console.log("You are in the Articles Stream reading something.");
+        console.log("Hack The Planet!");
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div  class="nav">
+            <br/><br/>
+            <ul>
+                <li><a href="https://www.thecloudhacker.co.uk">Home</a></li>
+                <li><a href="https://www.thecloudhacker.co.uk/about.htm">About</a></li>
+                <li><a href="https://www.thecloudhacker.co.uk/articles/">News</a></li>
+                <li><a href="https://www.github.com/thecloudhacker" target="gitwin">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/thecloudhacker/" target="linkwin">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@thecloudhacker" target="youwin">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="titleSection">
+            <span class="pic"><img src="../../img/cloudhackerimage.jpg" alt="TheCloudHacker" title="TheCloudHacker" width="120px" height="120px" /></span>
+            <h1>The Cloud Hacker</h1>
+            <span class="mottoLine">Fortis Non Ferox</span>
+        </div>
+    <br/><br/>
+    <div class="columnDiv">
+        <h2>eMudhra Intermediate Certificate Authority Compromise</h2>
+        <p class="dateField">20th October 2026</p>
+        <p>
+            eMudhra, an Indian Certificate Authority, sells certificates under the emSign brand through companies in India, the United States, and the Netherlands. It also has roots in the Mozilla, Chrome, and Apple root stores, which is 
+            where things started escalating very quickly as eight of the keys for eMudhra intermediate CA certificates becomae compromised on the 20th October.
+        </p>
+        <p>
+            A researcher reported the compromise to the root programs on the evening of 17th October, and after Chrome verified the findings, Chrome and Firefox blocked the eight certificates within hours. 
+            Thankfully, &quot;No TLS certificate chaining to the six intermediates used for websites had been logged to Certificate Transparency (CT) before Chrome's block, so none could have been trusted by default in Chrome 
+            or any other browser that requires CT logging&quot;, the Chrome Root Program reported.
+        </p>
+        <p>
+            The keys were not actually stolen, but were generated with too little randomness, meaning anyone could compute them from the public certificates. 
+        </p>
+        <p>
+            eMudhra said &quot;...a flaw in the April 2025 ceremony that created the certificates produced a second, weak set of keys alongside the intended ones, 
+            and that the weak set is what was published to the browser root stores&quot;.
+        </p>
+        <p>
+            Development tools are caught up in the mess, not just the browser providers. While browsers have revocation pushed to them, tooling and programs that check TLS certificates, from Go binaries to anything 
+            using Python's certifi bundle, do not check revocation data and keep trusting a chain until their code or their root bundle changes. 
+        </p>
+        <p>
+            For now, update browsers, run brew updates on machines and check for vulnerabilities in your library versions in your codebase.
+        </p>
+        <hr />
+        <br/>
+        <p>
+            For a full list of news and articles head to the <a href="https://www.thecloudhacker.co.uk/sitemap.htm#article/">SiteMap Page</a>
+        </p>
+        <br/><br/>
+
+
+    </div>
+
+    <div class="clearfix"><br/><br/></div>
+    <div class="clearfix"><br/><br/></div>
+    <div class="clearfix"><br/><br/></div>
+    <div class="clearfix"><br/><br/></div>
+    
+    </div>
+    <div class="footer">
+        <img src="../../img/cloudhackerimage.jpg" alt="TheCloudHacker" title="TheCloudHacker" width="30px" height="30px" class="roundpic" /> &copy; The Cloud Hacker 2026 || <a href="https://www.thecloudhacker.co.uk/sitemap.htm">Site Map</a>
+    </div>
+</html>
