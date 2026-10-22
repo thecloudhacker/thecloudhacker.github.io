@@ -49,6 +49,36 @@
     
     <div class="columnDiv">
         <!-- News Article -->
+        <h3>GitLab Critical Flaw</h3>
+        <p>
+            GitLab have <a href="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/" target="gitlabWin">released fixes</a> for a 
+            critical flaw (CVSS 10.0 - CVE-2026-110264) that lets an attacker run code on a self-managed server without logging in, 
+            affecting every version of the software from 7.0 (released in 2014) onwards.
+        </p>
+        <p>
+             GitLab said that, under certain conditions, it could allow an unauthenticated user to run arbitrary code on the server due to an integer overflow during 
+             the compilation of a specially crafted regular expression. They do not mention what those conditions are, however you can be sure attackers are using AI 
+             to brute force those conditions right now.
+        </p>
+        <p>
+           Only self-managed installations need to act. GitLab.com already runs the fixed version, and GitLab Dedicated tenants on the internal releases 
+           19.3.5-internal0 and 19.4.2-internal0 or later already have the fix
+        </p>
+        <p>
+            The flaw originates in the regular-expression compiler (Ruby's built-in engine, called Onigmo), which GitLab ships inside its own packages and patches 
+            in its own builds. A weakness in that engine has been present since 2014.
+        </p>
+        <p class="dateField">
+            22nd October 2026 || NEWS || <a href="https://www.thecloudhacker.co.uk/articles/2026/20261022-Gitlab.htm">Link || View</a>
+        </p>
+    </div>
+
+    <p class="breakdiv">
+        &nbsp;
+    </p>
+
+    <div class="columnDiv">
+        <!-- News Article -->
         <h3>PHP Critical Remote Code Execution Vulnerability</h3>
         <p>
             It is the season for bonfires, after all, and this week has been one of those weeks the security industry gazes on the growing flames and wonders 
