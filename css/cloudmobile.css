@@ -34,7 +34,7 @@
     }
 
     h1{
-        font-size: 4em;
+        font-size: 3em;
         font-family: Nabla, courier, arial;
         color: #f78400;
         text-align: center;
@@ -74,7 +74,11 @@
         visibility: hidden;
         display: none;
     }
-
+    .titleSection{
+        display: block;
+        padding-top: 20px;
+        text-align: center;
+    }
     .nav{
         display: block;
         font-family: SmoochSans, courier, arial;
