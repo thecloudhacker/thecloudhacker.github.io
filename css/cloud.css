@@ -80,13 +80,13 @@
         left: 30px;
         position: fixed;
     }
-    
     .seasonalItem img{
         width: auto;
         max-width: 210px;
         height: auto;
         border: 2px solid #000000;
-        border-radius: 45;
+        border-radius: 50px;
+        z-index:50;
     }
     .seasonalItem img:hover{
         transform: translate(-250px);
